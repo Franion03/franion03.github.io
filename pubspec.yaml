@@ -31,32 +31,56 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  adaptive_breakpoints: ^0.1.1
+  animations: ^2.0.2
+  collection: ^1.16.0
+  dual_screen: ^1.0.3
+  flutter_gallery_assets: ^1.0.2
+  flutter_localized_locales: ^2.0.3
+  flutter_staggered_grid_view: ^0.6.1
+  google_fonts: ^3.0.1
+  intl: ^0.17.0
+  meta: ^1.7.0
+  package_info_plus: ^2.0.0
+  path_provider: ^2.0.11
+  provider: ^6.0.2
+  rally_assets: ^3.0.1
+  scoped_model: ^2.0.0
+  shared_preferences: ^2.0.15
+  shrine_images: ^2.0.1
+  url_launcher: ^6.1.2
+  vector_math: ^2.1.2
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
-dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_driver:
+    sdk: flutter
+  args: ^2.3.1
+  flutter_lints: ^2.0.1
+  grinder: ^0.9.1
+  path: ^1.8.1
+  string_scanner: ^1.1.0
+  test: ^1.21.1
+  web_benchmarks: ^0.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  
+  deferred-components:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  generate: true
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:

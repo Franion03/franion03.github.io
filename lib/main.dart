@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localized_locales/flutter_localized_locales.dart';
+import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
+import 'package:fqrcv/data/gallery_options.dart';
+import 'app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final options = GalleryOptions.of(context);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -24,7 +29,16 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      localizationsDelegates: const [
+        ...GalleryLocalizations.localizationsDelegates,
+        LocaleNamesLocalizationsDelegate()
+      ],
+      supportedLocales: GalleryLocalizations.supportedLocales,
+      locale: options.locale,
+      localeListResolutionCallback: (locales, supportedLocales) {
+        deviceLocale = locales?.first;
+        return basicLocaleListResolution(locales, supportedLocales);
+      },
     );
   }
 }
