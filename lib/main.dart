@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localized_locales/flutter_localized_locales.dart';
 import 'package:flutter_gen/gen_l10n/gallery_localizations.dart';
 import 'package:fqrcv/data/gallery_options.dart';
+import 'package:fqrcv/routes.dart';
 import 'app.dart';
 
 void main() {
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         ...GalleryLocalizations.localizationsDelegates,
         LocaleNamesLocalizationsDelegate()
       ],
+      initialRoute: homeRoute,
       supportedLocales: GalleryLocalizations.supportedLocales,
       locale: options.locale,
       localeListResolutionCallback: (locales, supportedLocales) {

@@ -2,10 +2,10 @@
     package="com.example.fqrcv">
    <application
         android:label="fqrcv"
-        android:name="${applicationName}"
+        android:name="io.flutter.embedding.android.FlutterPlayStoreSplitApplication"
         android:icon="@mipmap/ic_launcher">
         <activity
-            android:name="io.flutter.embedding.android.FlutterPlayStoreSplitApplication"
+            android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
