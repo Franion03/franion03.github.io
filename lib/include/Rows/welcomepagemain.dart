@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:js' as js;
 class WelcomePageDesk extends StatelessWidget {
-  const WelcomePageDesk({Key key}) : super(key: key);
+  const WelcomePageDesk({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -161,7 +161,7 @@ class WelcomePageDesk extends StatelessWidget {
 }
 
 class WelcomePageTab extends StatelessWidget {
-  const WelcomePageTab({Key key}) : super(key: key);
+  const WelcomePageTab({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -319,7 +319,7 @@ class WelcomePageTab extends StatelessWidget {
 }
 
 class WelcomePageMob extends StatelessWidget {
-  const WelcomePageMob({Key key}) : super(key: key);
+  const WelcomePageMob({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

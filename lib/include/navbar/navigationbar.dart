@@ -30,7 +30,7 @@ class NavbarItem extends StatelessWidget {
 }
 
 class NavigationBar extends StatelessWidget {
-  const NavigationBar({Key key}) : super(key: key);
+  const NavigationBar({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
@@ -42,7 +42,7 @@ class NavigationBar extends StatelessWidget {
 }
 
 class NavbarTbDt extends StatelessWidget {
-  const NavbarTbDt({Key key}) : super(key: key);
+  const NavbarTbDt({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -101,7 +101,7 @@ class NavbarTbDt extends StatelessWidget {
 }
 
 class NavbarMob extends StatelessWidget {
-  const NavbarMob({Key key}) : super(key: key);
+  const NavbarMob({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(

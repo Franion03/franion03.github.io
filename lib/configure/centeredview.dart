@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class CenteredView extends StatelessWidget {
-  const CenteredView({Key key}) : super(key: key);
+  const CenteredView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +15,8 @@ class CenteredView extends StatelessWidget {
 }
 
 class CenteredViewDesk extends StatelessWidget {
-  final Widget child;
-  const CenteredViewDesk({Key key, this.child}) : super(key: key);
+  final Widget? child;
+  const CenteredViewDesk({Key? key, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +31,8 @@ class CenteredViewDesk extends StatelessWidget {
 }
 
 class CenteredViewMob extends StatelessWidget {
-  final Widget child;
-  const CenteredViewMob({Key key, this.child}) : super(key: key);
+  final Widget? child;
+  const CenteredViewMob({Key? key, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -47,8 +47,8 @@ class CenteredViewMob extends StatelessWidget {
 }
 
 class CenteredViewTab extends StatelessWidget {
-  final Widget child;
-  const CenteredViewTab({Key key, this.child}) : super(key: key);
+  final Widget? child;
+  const CenteredViewTab({Key? key, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

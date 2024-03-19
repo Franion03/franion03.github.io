@@ -23,48 +23,48 @@ const String HomeRoute = 'Home';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case HomeRoute:
-      return _getPageRoute(HomePage(), settings.name);
+      return _getPageRoute(HomePage(), settings.name ?? HomeRoute);
     case SkillsRoute:
       return _getPageRoute(ScreenTypeLayout(
         desktop: CenteredViewDesk(child: SkillsPage()),
         tablet: CenteredViewTab(child: SkillsPage()),
         mobile: CenteredViewMob(child: SkillsPage()),
-      ), settings.name);
+      ), settings.name ?? SkillsRoute);
     case ProjectsRoute:
       return _getPageRoute(
         ScreenTypeLayout(
       desktop: CenteredViewDesk(child: BlogPage(),),
       tablet: CenteredViewTab(child: BlogPage(),),
       mobile: CenteredViewMob(child: BlogPage(),),
-      ), settings.name);
+      ), settings.name ?? ProjectsRoute);
     case EducationRoute:
       return _getPageRoute(
         ScreenTypeLayout(
       desktop: CenteredViewDesk(child: EducationDesk(),),
       tablet: CenteredViewTab(child: EducationTab(),),
       mobile: CenteredViewMob(child: EducationMob(),),
-      ), settings.name);
+      ), settings.name ?? EducationRoute);
     case AchievementsRoute:
       return _getPageRoute(
         ScreenTypeLayout(
           desktop: CenteredViewDesk(child: AchievementsPage()),
           tablet: CenteredViewTab(child: AchievementsPage()),
           mobile: CenteredViewMob(child: AchievementsPage()),
-        ), settings.name);
+        ), settings.name ?? AchievementsRoute);
     case ContactRoute:
       return _getPageRoute(
         ScreenTypeLayout(
           desktop: CenteredViewDesk(child: ContactPageDesk()),
           tablet: CenteredViewTab(child: ContactPage()),
           mobile: CenteredViewMob(child: ContactPage()),
-        ), settings.name);
+        ), settings.name ?? ContactRoute);
     case BlogRoute:
       return _getPageRoute(ScreenTypeLayout(
       desktop: CenteredViewDesk(child: BlogPage(),),
       tablet: CenteredViewTab(child: BlogPage(),),
       mobile: CenteredViewMob(child: BlogPage(),),
-      ), settings.name);
-    default: _getPageRoute(HomePage(), settings.name);
+      ), settings.name ?? BlogRoute);
+    default: return _getPageRoute(HomePage(), settings.name ?? HomeRoute);
   }
 }
 
@@ -75,7 +75,7 @@ PageRoute _getPageRoute(Widget child, String routeName) {
 class _FadeRoute extends PageRouteBuilder {
   final Widget child;
   final String routeName;
-  _FadeRoute({this.child, this.routeName})
+  _FadeRoute({required this.child, required this.routeName})
       : super(
             pageBuilder: (
               BuildContext context,

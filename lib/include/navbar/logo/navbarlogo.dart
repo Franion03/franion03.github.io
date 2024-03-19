@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class NavbarLogo extends StatelessWidget {
-  const NavbarLogo({Key key}) : super(key: key);
+  const NavbarLogo({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     
