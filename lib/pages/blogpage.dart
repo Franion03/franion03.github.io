@@ -1,6 +1,7 @@
-import 'package:DeveloperFolio/include/Rows/blogcardmain.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../include/Rows/blogcardmain.dart';
 
 class BlogPage extends StatelessWidget {
   @override

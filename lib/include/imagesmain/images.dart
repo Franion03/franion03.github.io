@@ -1,4 +1,3 @@
-import 'package:DeveloperFolio/configure/colors.dart';
 import 'package:flutter/material.dart';
 
 class OneDesk extends StatelessWidget {

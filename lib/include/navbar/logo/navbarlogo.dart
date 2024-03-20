@@ -1,5 +1,3 @@
-import 'package:DeveloperFolio/configure/routing.dart';
-import 'package:DeveloperFolio/pages/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

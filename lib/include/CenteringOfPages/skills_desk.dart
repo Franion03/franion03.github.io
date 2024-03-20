@@ -1,5 +1,5 @@
-import 'package:DeveloperFolio/include/Rows/skillslogosmain.dart';
-import 'package:DeveloperFolio/include/imagesmain/images.dart';
+import '../Rows/skillslogosmain.dart';
+import '../imagesmain/images.dart';
 import 'package:flutter/material.dart';
 
 class SkillsDesk extends StatelessWidget {

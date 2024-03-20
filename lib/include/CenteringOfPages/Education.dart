@@ -1,5 +1,5 @@
-import 'package:DeveloperFolio/include/Rows/achievementsmain.dart';
-import 'package:DeveloperFolio/include/Rows/educationmain.dart';
+import '../Rows/achievementsmain.dart';
+import '../Rows/educationmain.dart';
 import 'package:flutter/material.dart';
 
 class EducationDesk extends StatelessWidget {

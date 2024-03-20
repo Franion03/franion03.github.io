@@ -1,5 +1,5 @@
-import 'package:DeveloperFolio/include/Rows/achievementsmain.dart';
-import 'package:DeveloperFolio/include/Rows/blogcardmain.dart';
+import '../Rows/achievementsmain.dart';
+import '../Rows/blogcardmain.dart';
 import 'package:flutter/material.dart';
 
 class BlogCenterDesk extends StatelessWidget {

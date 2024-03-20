@@ -1,6 +1,7 @@
-import 'package:DeveloperFolio/include/Rows/welcomepagemain.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../include/Rows/welcomepagemain.dart';
 
 class WelcomePage extends StatelessWidget {
   @override

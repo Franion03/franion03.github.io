@@ -1,6 +1,7 @@
-import 'package:DeveloperFolio/include/Rows/educationmain.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../include/Rows/educationmain.dart';
 
 class EducationPage extends StatelessWidget {
   @override

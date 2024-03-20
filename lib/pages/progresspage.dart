@@ -1,6 +1,7 @@
-import 'package:DeveloperFolio/include/CenteringOfPages/proficiency.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../include/CenteringOfPages/proficiency.dart';
 
 class ProgressPage extends StatelessWidget {
   @override

@@ -1,6 +1,4 @@
-import 'package:DeveloperFolio/configure/centeredview.dart';
-import 'package:DeveloperFolio/configure/navigation_service.dart';
-import 'package:DeveloperFolio/configure/routing.dart';
+
 import 'dart:js' as js;
 import 'dart:html' as html;
 
@@ -9,6 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../../configure/centeredview.dart';
+import '../../configure/navigation_service.dart';
+import '../../configure/routing.dart';
 import 'logo/navbarlogo.dart';
 
 class NavbarItem extends StatelessWidget {
