@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   final AdaptiveThemeMode? savedThemeMode;
   const MyApp({Key? key, required this.savedThemeMode}) : super(key: key);
   // This widget is the root of your application.
-  @override
+  @override 
   Widget build(BuildContext context) {
     return AdaptiveTheme(
       light: ThemeData(
