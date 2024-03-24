@@ -9,7 +9,6 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../configure/centeredview.dart';
 import '../../configure/navigation_service.dart';
-import '../../configure/routing.dart';
 import 'logo/navbarlogo.dart';
 
 class NavbarItem extends StatelessWidget {
