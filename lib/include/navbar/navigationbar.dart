@@ -60,30 +60,30 @@ class NavbarTbDt extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[          
-                   NavbarItem('Home', HomeRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Skills', SkillsRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Education', EducationRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Achievements', AchievementsRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Blogs', BlogRoute),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  NavbarItem('Contact', ContactRoute),
-                  SizedBox(
-                    width: 10,
-                  ),
+                  //  NavbarItem('Home', HomeRoute),
+                  // SizedBox(
+                  //   width: 30,
+                  // ),
+                  // NavbarItem('Skills', SkillsRoute),
+                  // SizedBox(
+                  //   width: 30,
+                  // ),
+                  // NavbarItem('Education', EducationRoute),
+                  // SizedBox(
+                  //   width: 30,
+                  // ),
+                  // NavbarItem('Achievements', AchievementsRoute),
+                  // SizedBox(
+                  //   width: 30,
+                  // ),
+                  // NavbarItem('Blogs', BlogRoute),
+                  // SizedBox(
+                  //   width: 30,
+                  // ),
+                  // NavbarItem('Contact', ContactRoute),
+                  // SizedBox(
+                  //   width: 10,
+                  // ),
                   IconButton(
               onPressed: () {
                 AdaptiveTheme.of(context).toggleThemeMode();
