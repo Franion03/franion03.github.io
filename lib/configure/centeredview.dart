@@ -20,11 +20,13 @@ class CenteredViewDesk extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 10),
-      child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 2000),
-        child: child,
+    return Center(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 10),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: 2000),
+          child: child,
+        ),
       ),
     );
   }
@@ -36,11 +38,13 @@ class CenteredViewMob extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-      child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 1200),
-        child: child,
+    return Center(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: 1200),
+          child: child,
+        ),
       ),
     );
   }
@@ -52,11 +56,13 @@ class CenteredViewTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-      child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 1200),
-        child: child,
+    return Center(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: 1200),
+          child: child,
+        ),
       ),
     );
   }
