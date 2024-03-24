@@ -20,7 +20,7 @@ class FooterDesk extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Made with ❤️ by Naveen Jujaray',style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.grey.shade500),)
+            Text('Made with ❤️ by Fran Quiles',style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.grey.shade500),)
           ],
         ),
       ),
@@ -36,7 +36,7 @@ class FooterTab extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Made with ❤️ by Naveen Jujaray',style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.grey.shade500),)
+            Text('Made with ❤️ by Fran Quiles',style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.grey.shade500),)
           ],
         ),
       ),
@@ -53,7 +53,7 @@ class FooterMob extends StatelessWidget {
     child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text('Made with ❤️ by Naveen Jujaray',style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal, color: Colors.grey.shade500),)
+        Text('Made with ❤️ by Fran Quiles',style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal, color: Colors.grey.shade500),)
       ],
     ),
         ),

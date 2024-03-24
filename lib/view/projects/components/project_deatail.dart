@@ -20,7 +20,6 @@ class ProjectDetail extends StatelessWidget {
               .textTheme
               .headlineSmall!
               .copyWith(
-              color: Colors.white,
               fontWeight: FontWeight.bold),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,

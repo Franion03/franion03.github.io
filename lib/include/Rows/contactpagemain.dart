@@ -1,7 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'dart:js' as js;
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactPageDesk extends StatelessWidget {
   const ContactPageDesk({Key? key}) : super(key: key);
@@ -25,8 +28,20 @@ class ContactPageDesk extends StatelessWidget {
               Text('☎️',
           style: TextStyle(color: Colors.grey, fontSize: 28),),
           SizedBox(width: 10,),
-          Text('+91 ***** *****',
-          style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),),
+          GestureDetector(
+            onTap: () {
+                final Uri emailLaunchUri = Uri(
+                  scheme: 'sms',
+                  path: '+41 442 53 33',
+                  queryParameters: <String, String>{
+                    'body': Uri.encodeComponent('Hi, I have seen your portfolio and I would like to discuss a project with you.'),
+                  },
+                );
+                launchUrl(emailLaunchUri);
+              },
+            child: Text('+41 442 53 33',
+            style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),),
+          ),
             ],
           ),
           SizedBox(height: 10,),
@@ -35,107 +50,23 @@ class ContactPageDesk extends StatelessWidget {
               Text('✉️',
           style: TextStyle(color: Colors.grey, fontSize: 28),),
           SizedBox(width: 10,),
-              Text('j***********n@gmail.com',
-          style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),),
+              GestureDetector(
+              onTap: () {
+                final Uri emailLaunchUri = Uri(
+                  scheme: 'mailto',
+                  path: 'fran.quiles00@gmail.com',
+                  query: encodeQueryParameters(<String, String>{
+                    'subject': '',
+                  }),
+                );
+                launchUrl(emailLaunchUri);
+              },
+                child: Text('fran.quiles00@gmail.com',
+                          style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),),
+              ),
            ],
          ),
          SizedBox(height: 20,),
-        Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,),
-                       onPressed:  () 
-                        {
-                       js.context.callMethod("open", ["https://www.facebook.com/naveenjujaray"]);
-                       },
-                       )),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child:  GestureDetector(
-                      child: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,),
-                      onTap: () {
-                       js.context.callMethod("open", ["https://twitter.com/naveenjujaray"]);
-                       },
-                      ),
-                       ),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
-                       onPressed: ()
-                       {
-                       js.context.callMethod("open", ["https://www.linkedin.com/in/naveenjujaray"]);
-                       },
-                       )),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,),
-                       onPressed: ()
-                       {
-                       js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
-                       },
-                       )),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.github,  size: 40,), 
-                      onPressed: ()
-                      {
-                       js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
-                       },
-                      )),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
-                      onPressed: ()
-                      {
-                       js.context.callMethod("open", ["https://www.gitlab.com/naveenjujaray"]);
-                       },
-                      )),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.medium,  size: 40,), 
-                      onPressed: ()
-                      {
-                       js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
-                       },
-                       )),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.dev, size: 40,), 
-                      onPressed: ()
-                      {
-                       js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
-                       },
-                       )),
-                ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
-                      onPressed: ()
-                      {
-                       js.context.callMethod("open", ["https://www.reddit.com/user/jujaraynaveen"]);
-                       },
-                       )),
-                ),
-              ],
-            ),
         ],
       ),
     );
@@ -166,8 +97,20 @@ class ContactPageTab extends StatelessWidget {
                 Text('☎️',
             style: TextStyle(color: Colors.grey, fontSize: 28),),
             SizedBox(width: 10,),
-            Text('+91 ***** *****',
-            style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),
+            GestureDetector(
+              onTap: () {
+                final Uri emailLaunchUri = Uri(
+                  scheme: 'sms',
+                  path: '+41 442 53 33',
+                  queryParameters: <String, String>{
+                    'body': Uri.encodeComponent('Hi, I have seen your portfolio and I would like to discuss a project with you.'),
+                  },
+                );
+                launchUrl(emailLaunchUri);
+              },
+              child: Text('+41 442 53 33',
+              style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),
+              ),
             ),
               ],
             ),
@@ -177,108 +120,24 @@ class ContactPageTab extends StatelessWidget {
                 Text('✉️',
             style: TextStyle(color: Colors.grey, fontSize: 28),),
             SizedBox(width: 10,),
-                Text('j***********n@gmail.com',
-            style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),
-            ),
+            GestureDetector(
+              onTap: () {
+                final Uri emailLaunchUri = Uri(
+                  scheme: 'mailto',
+                  path: 'fran.quiles00@gmail.com',
+                  query: encodeQueryParameters(<String, String>{
+                    'subject': '',
+                  }),
+                );
+                launchUrl(emailLaunchUri);
+              },
+              child: Text('fran.quiles00@gmail.com',
+                  style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),
+                  ),
+                ),
              ],
            ),
            SizedBox(height: 20,),
-            Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,), 
-                        onPressed: () 
-                          {
-                         js.context.callMethod("open", ["https://www.facebook.com/naveenjujaray"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,), 
-                        onPressed: ()
-                         {
-                         js.context.callMethod("open", ["https://twitter.com/naveenjujaray"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ), 
-                        onPressed: ()
-                         {
-                         js.context.callMethod("open", ["https://www.linkedin.com/in/naveenjujaray"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,), 
-                        onPressed: ()
-                         {
-                         js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-
-                        icon: Icon(FontAwesomeIcons.github, size: 40,),
-                        onPressed:()
-                        {
-                         js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
-                        onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://www.gitlab.com/naveenjujaray"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.medium,  size: 40,), 
-                        onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.dev, size: 40,), 
-                        onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
-                         },
-                         )),
-                  ),
-                  Expanded(
-                                    child: Container( width: 60,height: 60,
-                      child: IconButton(
-                        icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
-                        onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://www.reddit.com/user/jujaraynaveen"]);
-                         },
-                         )),
-                  ),
-                ],
-              ),
           ],
         ),
         
@@ -312,9 +171,21 @@ class ContactPageMob extends StatelessWidget {
             style: TextStyle(color: Colors.grey, fontSize: 22),
             ),
             SizedBox(width: 10,),
-            Text('+91 ***** *****',
-              style: TextStyle(color: Colors.grey, fontSize: 20, fontStyle: FontStyle.italic),
-              ),
+            GestureDetector(
+              onTap: () {
+                final Uri emailLaunchUri = Uri(
+                  scheme: 'sms',
+                  path: '+41 442 53 33',
+                  queryParameters: <String, String>{
+                    'body': Uri.encodeComponent('Hi, I have seen your portfolio and I would like to discuss a project with you.'),
+                  },
+                );
+                launchUrl(emailLaunchUri);
+              },
+              child: Text('+41 442 53 33',
+                style: TextStyle(color: Colors.grey, fontSize: 20, fontStyle: FontStyle.italic),
+                ),
+            ),
               ],
             ),
             SizedBox(height: 10,),
@@ -327,98 +198,38 @@ class ContactPageMob extends StatelessWidget {
             ),
                 ),
             SizedBox(width: 10,),
-                Expanded(
-                                child: Container(
-                                  child: Text('j***********n@gmail.com',
-            style: TextStyle(color: Colors.grey, fontSize: 20, fontStyle: FontStyle.italic),
-            ),
+            Expanded(
+              child: Container(
+                child: GestureDetector(
+                  onTap: () {
+                    final Uri emailLaunchUri = Uri(
+                      scheme: 'mailto',
+                      path: 'fran.quiles00@gmail.com',
+                      query: encodeQueryParameters(<String, String>{
+                        'subject': '',
+                      }),
+                    );
+                    launchUrl(emailLaunchUri);
+                  },
+                    child: Text('fran.quiles00@gmail.com',
+                                style: TextStyle(color: Colors.grey, fontSize: 20, fontStyle: FontStyle.italic),
                                 ),
+                  ),
+                ),
                 ),
              ],
            ),
            SizedBox(height: 20,),
-            Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,), 
-                      onPressed: () 
-                          {
-                         js.context.callMethod("open", ["https://www.facebook.com/naveenjujaray"]);
-                         },
-                         )),
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,), 
-                      onPressed: ()
-                         {
-                         js.context.callMethod("open", ["https://twitter.com/naveenjujaray"]);
-                         },
-                         )),
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ), 
-                      onPressed: ()
-                         {
-                         js.context.callMethod("open", ["https://www.linkedin.com/in/naveenjujaray"]);
-                         },
-                         )),
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,), 
-                      onPressed: ()
-                         {
-                         js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
-                         },
-                         )),
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.github,  size: 40,), onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
-                         },
-                         )),
-                ],
-              ),
-              Row(mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                 Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
-                      onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://www.gitlab.com/naveenjujaray"]);
-                         },
-                         )),
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.medium,  size: 40,), 
-                      onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
-                         },
-                         )),
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.dev, size: 40,), 
-                      onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
-                         },
-                         )),
-                  Container( width: 55,height: 55,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,),
-                     onPressed: ()
-                        {
-                         js.context.callMethod("open", ["https://www.reddit.com/user/jujaraynaveen"]);
-                         },)),
-              ],
-              ),
           ],
         ),
       ),
     );
   }
+}
+
+String? encodeQueryParameters(Map<String, String> params) {
+  return params.entries
+      .map((MapEntry<String, String> e) =>
+          '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
+      .join('&');
 }

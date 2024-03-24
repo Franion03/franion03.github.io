@@ -41,88 +41,85 @@ class _HomeDesktopState extends State<HomeDesktop> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scrollbar(
-        controller: _controller,
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Flexible(
-                          child: ListView(
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: true,
-
-                  children: [
-                     
-                    Row(
-                      children: <Widget>[
-                        Expanded(child: WelcomePage()),
-                        Expanded(child: OneDesk()),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 75,
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Expanded(child: TwoDesk()),
-                        Expanded(child: SkillsLogoDesk()),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 75,
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Expanded(child: SkillBarDesk()),
-                        Expanded(child: ThreeDesk()),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 75,
-                    ),
-                    Row(
-                      children: [
-                        Expanded(child: ProjectsView()),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 75,
-                    ),
-                    Row(
-                      children: [
-                        Expanded(child: AchievementDesk()),
-                      ],
-                    ),
-                     SizedBox(
-                      height: 75,
-                    ),
-                    Row(
-                      children: [
-                        Expanded(child: Certifications()),
-                      ],
-                    ),
-                     SizedBox(
-                      height: 75,
-                    ),
-                     Row(
-                      children: [
-                        Expanded(child: ContactCenterDesk()),
-                        Expanded(child: FourDesk(),),
-                      ],
-                    ),
-                    SizedBox(height: 100,),
-                    Row(
-                      children: [
-                        Expanded(child: FooterPage()),
-                      ],
-                    ),
-                    
-                  ],
-                ),
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Flexible(
+                        child: ListView(
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+      
+                children: [
+                   
+                  Row(
+                    children: <Widget>[
+                      Expanded(child: WelcomePage()),
+                      Expanded(child: OneDesk()),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 75,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(child: TwoDesk()),
+                      Expanded(child: SkillsLogoDesk()),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 75,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(child: SkillBarDesk()),
+                      Expanded(child: ThreeDesk()),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 75,
+                  ),
+                  Row(
+                    children: [
+                      Expanded(child: ProjectsView()),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 75,
+                  ),
+                  Row(
+                    children: [
+                      Expanded(child: AchievementDesk()),
+                    ],
+                  ),
+                   SizedBox(
+                    height: 75,
+                  ),
+                  Row(
+                    children: [
+                      Expanded(child: Certifications()),
+                    ],
+                  ),
+                   SizedBox(
+                    height: 75,
+                  ),
+                   Row(
+                    children: [
+                      Expanded(child: ContactCenterDesk()),
+                      Expanded(child: FourDesk(),),
+                    ],
+                  ),
+                  SizedBox(height: 100,),
+                  Row(
+                    children: [
+                      Expanded(child: FooterPage()),
+                    ],
+                  ),
+                  
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

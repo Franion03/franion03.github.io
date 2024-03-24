@@ -25,7 +25,7 @@ class WelcomePageDesk extends StatelessWidget {
           ),
           SizedBox(height: 40,),
           Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
@@ -47,16 +47,14 @@ class WelcomePageDesk extends StatelessWidget {
               //         ),
               //          ),
               //   ),
-                Expanded(
-                                  child: Container( width: 60,height: 60,
-                    child: IconButton(
-                      icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
-                       onPressed: ()
-                       {
-                       js.context.callMethod("open", ["https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"]);
-                       },
-                       )),
-                ),
+                Container( width: 60,height: 60,
+                                    child: IconButton(
+                                      icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
+                                       onPressed: ()
+                                       {
+                                       js.context.callMethod("open", ["https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"]);
+                                       },
+                                       )),
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
@@ -121,26 +119,10 @@ class WelcomePageDesk extends StatelessWidget {
             ),
           SizedBox(height: 40,),
          Row(
-               mainAxisAlignment: MainAxisAlignment.center,
+               mainAxisAlignment: MainAxisAlignment.start,
                children: [
-                  Expanded(
-                   child: GestureDetector(
-                     onTap: () => locator<NavigationService>().navigateTo(ContactRoute),
-                                        child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                child: Text('CONTACT ME', 
-         style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-                decoration: BoxDecoration(
-         color: Colors.blueAccent,
-           borderRadius: BorderRadius.circular(5),
-              ),
-              ),
-                   ),
-                  ),
-              SizedBox(width: 50,),
-               Expanded(
-                  child: DownloadButton()
-               ),
+                  
+               DownloadButton(),
                ],
              ),
              
@@ -162,7 +144,7 @@ class WelcomePageTab extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: 40,),
             Center(
-              child:  Text("Hi ! I'm Naveen Jujaray", 
+              child:  Text("Hi ! I'm Fran Quiles", 
               style: TextStyle(fontWeight: FontWeight.w800, height: 1.3, fontSize: 50),
               textAlign: TextAlign.justify,),
             ),
@@ -320,7 +302,7 @@ class WelcomePageMob extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: 40,),
             Center(
-              child:  Text("Hi ! I'm Naveen Jujaray", 
+              child:  Text("Hi ! I'm Fran Quiles", 
               style: TextStyle(fontWeight: FontWeight.w800, height: 1.3, fontSize: 32),
               textAlign: TextAlign.justify,),
             ),

@@ -23,6 +23,14 @@ class MyApp extends StatelessWidget {
       light: ThemeData(
         brightness: Brightness.light,
         primarySwatch: Colors.red,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+        textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
+            .apply(bodyColor: Colors.black,)
+            .copyWith(
+          bodyLarge: const TextStyle(color: Colors.grey),
+          bodyMedium: const TextStyle(color: Colors.black),
+        ),
       ),
       dark: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

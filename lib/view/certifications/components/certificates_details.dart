@@ -1,15 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../../model/certificate_model.dart';
 import '../../../../res/constants.dart';
+import '../../../view model/getx_controllers/certification_controller.dart';
 
 class CertificateStack extends StatelessWidget {
+  final controller = Get.put(CertificationController());
   CertificateStack({super.key, required this.index});
   final int index;
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onHover: (value) {
+        controller.onHover(index, value);
+      },
       onTap: () {
       },
       borderRadius: BorderRadius.circular(30),
@@ -19,7 +25,7 @@ class CertificateStack extends StatelessWidget {
           width: double.infinity,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
-              color: bgColor),
+              color: Theme.of(context).scaffoldBackgroundColor),
           duration: const Duration(milliseconds: 500),
           child: SingleChildScrollView(
             child: Column(
@@ -31,7 +37,6 @@ class CertificateStack extends StatelessWidget {
                       .textTheme
                       .subtitle2!
                       .copyWith(
-                      color: Colors.white,
                       fontWeight: FontWeight.bold),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
@@ -48,7 +53,7 @@ class CertificateStack extends StatelessWidget {
                 Text.rich(
                   maxLines: 1,
                   TextSpan(
-                      text: 'Skills : ',style: const TextStyle(color: Colors.white,),
+                      text: 'Skills : ',style: TextStyle(color: Theme.of(context).textTheme.bodyLarge!.color,),
                       children: [
                         TextSpan(
                           text: certificateList[index].skills,style: const TextStyle(color: Colors.grey,overflow: TextOverflow.ellipsis),)
