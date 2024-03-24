@@ -1,0 +1,98 @@
+
+import 'package:flutter/material.dart';
+import 'package:franciscoCV/view/history/components/inner_timeline.dart';
+import 'package:timelines/timelines.dart';
+
+import '../../../model/companies.dart';
+
+class HistoryGrid extends StatelessWidget {
+  final int crossAxisCount;
+  final double ratio;
+  HistoryGrid({super.key, this.crossAxisCount = 3,  this.ratio=1.3});
+  // final controller = Get.put(CertificationController());
+
+  @override
+  Widget build(BuildContext context) {
+    return FixedTimeline.tileBuilder(
+          theme: TimelineThemeData(
+            nodePosition: 0,
+            color: Color(0xff989898),
+            indicatorTheme: IndicatorThemeData(
+              position: 0,
+              size: 20.0,
+            ),
+            connectorTheme: ConnectorThemeData(
+              thickness: 2.5,
+            ),
+          ),
+          builder: TimelineTileBuilder.connected(
+            connectionDirection: ConnectionDirection.before,
+            itemCount: companies.length,
+            contentsBuilder: (_, index) {
+              if (companies[index].isCompleted) return null;
+
+              return Padding(
+                padding: EdgeInsets.only(left: 8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      companies[index].name,
+                      style: DefaultTextStyle.of(context).style.copyWith(
+                            fontSize: 18.0,
+                          ),
+                    ),
+                    InnerTimeline(messages: companies[index].messages),
+                  ],
+                ),
+              );
+            },
+            indicatorBuilder: (_, index) {
+                return AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                gradient: const LinearGradient(colors: [
+                  Colors.pinkAccent,
+                  Colors.blue,
+                ]),
+                boxShadow:  [
+                  BoxShadow(
+                    color: Colors.pink,
+                    offset: const Offset(-2, 0),
+                    blurRadius: 10 ,
+                  ),
+                  BoxShadow(
+                    color: Colors.blue,
+                    offset: const Offset(2, 0),
+                    blurRadius:  10 ,
+                  )
+                ]),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                        companies[index].date,
+                        style: DefaultTextStyle.of(context).style.copyWith(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                  
+                            ),
+                      ),
+                ),
+                  ); 
+                         
+            },
+            connectorBuilder: (_, index, ___) => SolidLineConnector(
+              color:  Theme.of(context).colorScheme.primary,
+            ),
+          ),
+        );
+  }
+}
+
+
+
+
+
+

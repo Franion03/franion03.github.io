@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../view/projects/components/title_text.dart';
+
 class SkillsLogoDesk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -9,10 +11,7 @@ class SkillsLogoDesk extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text("What i do", 
-          style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 50),
-          textAlign: TextAlign.center,
-          ),
+          TitleText(prefix: 'What ', title: 'I do'),
           SizedBox(height: 30,),
           Text("CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK", 
           style: TextStyle(fontSize: 22,),
@@ -77,10 +76,7 @@ class SkillsLogoTab extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("What i do", 
-            style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 50),
-            textAlign: TextAlign.center,
-            ),
+          TitleText(prefix: 'What ', title: 'I do'),
             SizedBox(height: 30,),
             Text("CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK", 
             style: TextStyle(fontSize: 18,),
@@ -145,10 +141,7 @@ class SkillsLogoMob extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("What i do", 
-            style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 32),
-            textAlign: TextAlign.center,
-            ),
+            TitleText(prefix: 'What ', title: 'I do'),
             SizedBox(height: 30,),
             Text("CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK", 
             style: TextStyle(fontSize: 16,),

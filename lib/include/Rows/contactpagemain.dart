@@ -1,10 +1,10 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'dart:js' as js;
 
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../view/projects/components/title_text.dart';
 
 class ContactPageDesk extends StatelessWidget {
   const ContactPageDesk({Key? key}) : super(key: key);
@@ -15,10 +15,7 @@ class ContactPageDesk extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Contact Me", 
-          style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 50),
-          textAlign: TextAlign.center,
-          ),
+          TitleText(prefix: 'Contact ', title: 'Me'),
           SizedBox(height: 10,),
           Text('DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
           style: TextStyle(color: Colors.grey, fontSize: 22),),
@@ -83,10 +80,7 @@ class ContactPageTab extends StatelessWidget {
         child: Column(
  crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Contact Me", 
-            style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 50),
-            
-            ),
+            TitleText(prefix: 'Contact ', title: 'Me'),
             SizedBox(height: 10,),
             Text('DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
             style: TextStyle(color: Colors.grey, fontSize: 22),
@@ -156,10 +150,7 @@ class ContactPageMob extends StatelessWidget {
         child: Column(
  crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Contact Me", 
-            style: TextStyle(fontWeight: FontWeight.w800, height: 1.0, fontSize: 32),
-            
-            ),
+            TitleText(prefix: 'Contact ', title: 'Me'),
             SizedBox(height: 10,),
             Text('DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
             style: TextStyle(color: Colors.grey, fontSize: 18),),
