@@ -13,7 +13,7 @@ class ProjectLinks extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Text('Check on Github',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis),
+             Text('Check on Github',style: TextStyle(color: Theme.of(context).textTheme.titleMedium?.color),overflow: TextOverflow.ellipsis),
             IconButton(onPressed: () {launchUrl(Uri.parse(projectList[index].link));}, icon: SvgPicture.asset('assets/icons/github.svg')),
           ],
         ),
