@@ -4,6 +4,7 @@ import 'dart:js' as js;
 
 import '../../configure/navigation_service.dart';
 import '../../configure/routing.dart';
+import '../../view/intro/components/download_button.dart';
 class WelcomePageDesk extends StatelessWidget {
   const WelcomePageDesk({Key? key}) : super(key: key);
   @override
@@ -138,19 +139,7 @@ class WelcomePageDesk extends StatelessWidget {
                   ),
               SizedBox(width: 50,),
                Expanded(
-                  child: GestureDetector(
-                    onTap: (){js.context.callMethod("open", ["https://drive.google.com/file/d/1PZYWMJEQMLIh5g5mXnENQcOL1vlunq6_/view?usp=sharing"]);
-                    },
-                                      child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                    child: Text('SEE MY RESUME', 
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white,),),
-                    decoration: BoxDecoration(
-                      color: Colors.blueAccent,
-           borderRadius: BorderRadius.circular(5),
-              ),
-              ),
-                  ),
+                  child: DownloadButton()
                ),
                ],
              ),

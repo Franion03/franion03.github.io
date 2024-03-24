@@ -6,10 +6,10 @@ import '../include/CenteringOfPages/proficiency.dart';
 class ProgressPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: ProgressBarMob(),
-      desktop: ProgressBarDesk(),
-      tablet: ProgressBarTab(),    
+    return ScreenTypeLayout.builder(
+      mobile: (BuildContext context) => ProgressBarMob(),
+       desktop: (BuildContext context) => ProgressBarDesk(),
+       tablet: (BuildContext context) => ProgressBarTab(),    
     );
   }
 }

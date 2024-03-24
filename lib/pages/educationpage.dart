@@ -6,10 +6,10 @@ import '../include/Rows/educationmain.dart';
 class EducationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      desktop: EduDesk(),
-      tablet: EduTab(),
-      mobile: EduMob(),
+    return ScreenTypeLayout.builder(
+      desktop: (BuildContext context) => EduDesk(),
+       tablet: (BuildContext context) => EduTab(),
+       mobile: (BuildContext context) => EduMob(),
     );
   }
 }

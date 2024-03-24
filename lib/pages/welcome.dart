@@ -6,10 +6,10 @@ import '../include/Rows/welcomepagemain.dart';
 class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: WelcomePageMob(),
-      desktop: WelcomePageDesk(),
-      tablet: WelcomePageTab(),    
+    return ScreenTypeLayout.builder(
+      mobile: (BuildContext context) => WelcomePageMob(),
+       desktop: (BuildContext context) => WelcomePageDesk(),
+       tablet: (BuildContext context) => WelcomePageTab(),    
     );
   }
 }

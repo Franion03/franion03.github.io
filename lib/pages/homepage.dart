@@ -20,10 +20,10 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
                 
               Expanded(
-         child: ScreenTypeLayout(
-           mobile: CenteredViewMob(child: HomeMobile()),
-           desktop: CenteredViewDesk(child: HomeDesktop()),
-           tablet: CenteredViewTab(child: HomeTab()),
+         child: ScreenTypeLayout.builder(
+           mobile: (BuildContext context) => CenteredViewMob(child: HomeMobile()),
+           desktop: (BuildContext context) => CenteredViewDesk(child: HomeDesktop()),
+           tablet: (BuildContext context) => CenteredViewTab(child: HomeTab()),
          ),
           ),
               ],

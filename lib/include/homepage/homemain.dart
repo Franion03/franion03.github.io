@@ -1,6 +1,8 @@
 import '../../pages/footer.dart';
 import '../../pages/progresspage.dart';
 import '../../pages/welcome.dart';
+import '../../view/certifications/certifications.dart';
+import '../../view/projects/project_view.dart';
 import '../CenteringOfPages/Achievement.dart';
 import '../CenteringOfPages/Blogcenter.dart';
 import '../CenteringOfPages/ContactCenter.dart';
@@ -81,7 +83,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     ),
                     Row(
                       children: [
-                        Expanded(child: EducationDesk()),
+                        Expanded(child: ProjectsView()),
                       ],
                     ),
                     SizedBox(
@@ -97,7 +99,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     ),
                     Row(
                       children: [
-                        Expanded(child: BlogCenterDesk()),
+                        Expanded(child: Certifications()),
                       ],
                     ),
                      SizedBox(

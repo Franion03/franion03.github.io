@@ -1,4 +1,5 @@
-import '../pages/layoutpage.dart';
+import 'package:franciscoCV/view/splash/splash_view.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:adaptive_theme/adaptive_theme.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
         title: 'Francisco Javier Quiles Ruiz',
         theme: theme,
         darkTheme: darkTheme,
-        home: LayoutTemplate(),
+        home: SplashView(),
       ),
     );
   }

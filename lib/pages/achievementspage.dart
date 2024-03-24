@@ -6,10 +6,10 @@ import '../include/CenteringOfPages/Achievement.dart';
 class AchievementsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      desktop: AchievementDesk(),
-      tablet: AchievementTab(),
-      mobile: AchievementMob(),      
+    return ScreenTypeLayout.builder(
+      desktop: (BuildContext context) => AchievementDesk(),
+       tablet: (BuildContext context) => AchievementTab(),
+       mobile: (BuildContext context) => AchievementMob(),
     );
   }
 }

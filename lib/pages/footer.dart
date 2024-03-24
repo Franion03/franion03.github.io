@@ -4,10 +4,10 @@ import 'package:responsive_builder/responsive_builder.dart';
 class FooterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      desktop: FooterDesk(),
-      tablet: FooterTab(),
-      mobile: FooterMob(),      
+    return ScreenTypeLayout.builder(
+      desktop: (BuildContext context) => FooterDesk(),
+       tablet: (BuildContext context) => FooterTab(),
+       mobile: (BuildContext context) => FooterMob(),      
     );
   }
 }

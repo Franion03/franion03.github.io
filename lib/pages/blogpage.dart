@@ -6,10 +6,10 @@ import '../include/Rows/blogcardmain.dart';
 class BlogPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      desktop: BlogCardDesk(),
-      tablet: BlogCardTab(),
-      mobile: BlogCardMob(),      
+    return ScreenTypeLayout.builder(
+      desktop: (BuildContext context) => BlogCardDesk(),
+       tablet: (BuildContext context) => BlogCardTab(),
+       mobile: (BuildContext context) => BlogCardMob(),      
     );
   }
 }

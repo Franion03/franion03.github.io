@@ -7,10 +7,10 @@ import '../include/CenteringOfPages/skills_desk.dart';
 class SkillsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout(
-      mobile: SkillsMob(),
-      desktop: SkillsDesk(),
-      tablet: SkillsTab(),    
+    return ScreenTypeLayout.builder(
+      mobile: (BuildContext context) => SkillsMob(),
+       desktop: (BuildContext context) => SkillsDesk(),
+       tablet: (BuildContext context) => SkillsTab(),    
     );
   }
 }
