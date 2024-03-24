@@ -1,14 +1,9 @@
 import '../../pages/footer.dart';
-import '../../pages/progresspage.dart';
 import '../../pages/welcome.dart';
 import '../../view/certifications/certifications.dart';
 import '../../view/history/history.dart';
 import '../../view/projects/project_view.dart';
-import '../CenteringOfPages/Achievement.dart';
-import '../CenteringOfPages/Blogcenter.dart';
 import '../CenteringOfPages/ContactCenter.dart';
-import '../CenteringOfPages/Education.dart';
-import '../CenteringOfPages/skills_desk.dart';
 import '../imagesmain/images.dart';
 import '../Rows/skillslogosmain.dart';
 import '../Rows/welcomepagemain.dart';
@@ -130,11 +125,9 @@ class HomeMobile extends StatelessWidget {
               children: <Widget>[
                 WelcomePageMob(),
                 OneMob(),
-                SkillsMob(),
-                ProgressPage(),
-                EducationMob(),
-                AchievementMob(),
-                BlogCenterMob(),
+                History(),
+                ProjectsView(),
+                Certifications(),
                 ContactCenterMob(),
                 SizedBox(height: 50,),
                 FooterPage()
@@ -161,12 +154,10 @@ class HomeTab extends StatelessWidget {
                     physics: NeverScrollableScrollPhysics(),
               children: <Widget>[
                 WelcomePageTab(),
-                OneTab(),
-                SkillsTab(),
-                ProgressPage(),
-                EducationTab(),
-                AchievementTab(),
-                BlogCenterTab(),
+                OneMob(),
+                History(),
+                ProjectsView(),
+                Certifications(),
                 ContactCenterTab(),
                 SizedBox(height: 50,),
                 FooterMob(),

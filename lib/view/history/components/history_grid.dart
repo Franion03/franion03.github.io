@@ -29,7 +29,6 @@ class HistoryGrid extends StatelessWidget {
             connectionDirection: ConnectionDirection.before,
             itemCount: companies.length,
             contentsBuilder: (_, index) {
-              if (companies[index].isCompleted) return null;
 
               return Padding(
                 padding: EdgeInsets.only(left: 8.0),
