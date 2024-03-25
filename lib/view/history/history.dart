@@ -17,7 +17,7 @@ class History extends StatelessWidget {
           if(Responsive.isLargeMobile(context))const SizedBox(
             height: defaultPadding,
           ),
-          const TitleText(prefix: 'Backwards & ', title: 'History'),
+          const TitleText(prefix: 'Professional ', title: 'Experience'),
           const SizedBox(
             height: defaultPadding,
           ),
