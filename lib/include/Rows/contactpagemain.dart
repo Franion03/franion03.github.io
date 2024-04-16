@@ -29,14 +29,14 @@ class ContactPageDesk extends StatelessWidget {
             onTap: () {
                 final Uri emailLaunchUri = Uri(
                   scheme: 'sms',
-                  path: '+41 442 53 33',
+                  path: '+41 79 442 53 33',
                   queryParameters: <String, String>{
                     'body': Uri.encodeComponent('Hi, I have seen your portfolio and I would like to discuss a project with you.'),
                   },
                 );
                 launchUrl(emailLaunchUri);
               },
-            child: Text('+41 442 53 33',
+            child: Text('+41 79 442 53 33',
             style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),),
           ),
             ],
@@ -95,14 +95,14 @@ class ContactPageTab extends StatelessWidget {
               onTap: () {
                 final Uri emailLaunchUri = Uri(
                   scheme: 'sms',
-                  path: '+41 442 53 33',
+                  path: '+41 79 442 53 33',
                   queryParameters: <String, String>{
                     'body': Uri.encodeComponent('Hi, I have seen your portfolio and I would like to discuss a project with you.'),
                   },
                 );
                 launchUrl(emailLaunchUri);
               },
-              child: Text('+41 442 53 33',
+              child: Text('+41 79 442 53 33',
               style: TextStyle(color: Colors.grey, fontSize: 28, fontStyle: FontStyle.italic),
               ),
             ),
@@ -166,14 +166,14 @@ class ContactPageMob extends StatelessWidget {
               onTap: () {
                 final Uri emailLaunchUri = Uri(
                   scheme: 'sms',
-                  path: '+41 442 53 33',
+                  path: '+41 79 442 53 33',
                   queryParameters: <String, String>{
                     'body': Uri.encodeComponent('Hi, I have seen your portfolio and I would like to discuss a project with you.'),
                   },
                 );
                 launchUrl(emailLaunchUri);
               },
-              child: Text('+41 442 53 33',
+              child: Text('+41 79 442 53 33',
                 style: TextStyle(color: Colors.grey, fontSize: 20, fontStyle: FontStyle.italic),
                 ),
             ),
