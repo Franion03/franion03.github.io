@@ -4,6 +4,7 @@ import 'package:franciscoCV/view/history/components/inner_timeline.dart';
 import 'package:timelines/timelines.dart';
 
 import '../../../model/companies.dart';
+import '../../../model/linkedin_data.dart';
 
 class HistoryGrid extends StatelessWidget {
   final int crossAxisCount;
@@ -13,6 +14,9 @@ class HistoryGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Merge LinkedIn data with static data
+    final List<Timeline> allHistory = [...linkedinCompanies, ...companies];
+
     return FixedTimeline.tileBuilder(
           theme: TimelineThemeData(
             nodePosition: 0,
@@ -27,7 +31,7 @@ class HistoryGrid extends StatelessWidget {
           ),
           builder: TimelineTileBuilder.connected(
             connectionDirection: ConnectionDirection.before,
-            itemCount: companies.length,
+            itemCount: allHistory.length,
             contentsBuilder: (_, index) {
 
               return Padding(
@@ -37,12 +41,12 @@ class HistoryGrid extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      companies[index].name,
+                      allHistory[index].name,
                       style: DefaultTextStyle.of(context).style.copyWith(
                             fontSize: 18.0,
                           ),
                     ),
-                    InnerTimeline(messages: companies[index].messages),
+                    InnerTimeline(messages: allHistory[index].messages),
                   ],
                 ),
               );
@@ -71,7 +75,7 @@ class HistoryGrid extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                        companies[index].date,
+                        allHistory[index].date,
                         style: DefaultTextStyle.of(context).style.copyWith(
                               fontSize: 18.0,
                               color: Colors.white,
