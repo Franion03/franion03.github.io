@@ -19,17 +19,18 @@ class ImageViewer {
               child: Scaffold(
                 backgroundColor: Colors.black,
                 body: Container(
-                    color: Colors.white,
-                    child: Center(
-                      child: PhotoView(
-                        imageProvider: image.startsWith('http') 
-                            ? NetworkImage(image) as ImageProvider 
-                            : AssetImage(image),
-                      )
-                    )),
+                  color: Colors.white,
+                  child: Center(
+                    child: PhotoView(
+                      imageProvider: image.startsWith('http') 
+                          ? NetworkImage(image) as ImageProvider 
+                          : AssetImage(image),
+                    ),
+                  ),
+                ),
               ),
             ),
-
+          ),
         );
       },
     );

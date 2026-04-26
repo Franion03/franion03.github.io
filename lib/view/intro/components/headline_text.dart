@@ -16,7 +16,7 @@ class MyPortfolioText extends StatelessWidget {
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
                   height: 0,
-                  fontSize: value as double));
+                  fontSize: value));
         },
       );
     });

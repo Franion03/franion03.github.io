@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:franciscoCV/view/history/components/inner_timeline.dart';
-import 'package:timelines/timelines.dart';
+import 'package:timelines_plus/timelines_plus.dart' hide Timeline;
 
 import '../../../model/companies.dart';
 import '../../../model/linkedin_data.dart';
