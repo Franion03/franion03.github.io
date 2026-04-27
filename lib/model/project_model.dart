@@ -15,8 +15,8 @@ List<Project> projectList = [
   ),
   Project(
     'Franion03 - Programacion_1',
-    'Practica de programación de primero. Contribute to Franion03/Programacion_1 development by creating an account on GitHub.',
-    'https://opengraph.githubassets.com/9a4a7ae5932840b7097fcf0a6557a56dab803f2c85fc9c439d02d6d6df3e246f/Franion03/Programacion_1',
+    'List handler in c. Contribute to Franion03/Programacion_1 development by creating an account on GitHub.',
+    'https://opengraph.githubassets.com/c37917540a547978f07bf086e6b7cfa767c7b050ce259856b6b7c912cc910260/Franion03/Programacion_1',
     'https://github.com/Franion03/Programacion_1',
   )
 ];
