@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:franciscoCV/view%20model/responsive.dart';
+import 'package:franciscocv/view%20model/responsive.dart';
 
 import '../../res/constants.dart';
 import '../projects/components/title_text.dart';

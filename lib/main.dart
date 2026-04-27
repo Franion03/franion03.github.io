@@ -1,4 +1,4 @@
-import 'package:franciscoCV/view/splash/splash_view.dart';
+import 'package:franciscocv/view/splash/splash_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

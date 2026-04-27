@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:franciscoCV/view/projects/components/project_link.dart';
+import 'package:franciscocv/view/projects/components/project_link.dart';
 
 import '../../../../model/project_model.dart';
 import '../../../../res/constants.dart';

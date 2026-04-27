@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:timelines_plus/timelines_plus.dart';
 
-import '../../../model/companies.dart';
+import '../../../model/companies.dart' show TimelineMessage;
 
 class InnerTimeline extends StatelessWidget {
   const InnerTimeline({
@@ -18,7 +18,9 @@ class InnerTimeline extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: FixedTimeline.tileBuilder(
+      child: Timeline.tileBuilder(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         theme: TimelineTheme.of(context).copyWith(
           nodePosition: 0,
           connectorTheme: TimelineTheme.of(context).connectorTheme.copyWith(
@@ -40,11 +42,26 @@ class InnerTimeline extends StatelessWidget {
             }
 
             return Padding(
-              padding: EdgeInsets.only(left: 8.0),
-              child: Text(messages[index - 1].toString()),
+              padding: const EdgeInsets.only(left: 8.0, top: 4.0, bottom: 4.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    messages[index - 1].createdAt,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12,
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
+                  ),
+                  Text(
+                    messages[index - 1].message,
+                    style: const TextStyle(fontSize: 14),
+                  ),
+                ],
+              ),
             );
           },
-          itemExtentBuilder: (_, index) => isEdgeIndex(index) ? 10.0 : 30.0,
           nodeItemOverlapBuilder: (_, index) =>
               isEdgeIndex(index) ? true : null,
           itemCount: messages.length + 2,

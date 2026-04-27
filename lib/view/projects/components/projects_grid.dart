@@ -25,21 +25,8 @@ class ProjectGrid extends StatelessWidget {
                 vertical: defaultPadding, horizontal: defaultPadding),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
-                gradient: const LinearGradient(colors: [ 
-                  Colors.pinkAccent,
-                  Colors.blue,
-                ]),
-                boxShadow:  [
-                  BoxShadow(
-                    color: Colors.pink,
-                    offset: const Offset(-2, 0),
-                    blurRadius: controller.hovers[index] ? 20 : 10,
-                  ),
-                  BoxShadow(
-                      color: Colors.blue,
-                      offset: const Offset(2, 0),
-                      blurRadius: controller.hovers[index] ? 20 : 10,),
-                ]),
+                color: Colors.transparent,
+            ),
             child: ProjectStack(index: index)
         ));
       },

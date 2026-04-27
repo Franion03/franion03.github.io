@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:franciscoCV/view%20model/controller.dart';
+import 'package:franciscocv/view%20model/controller.dart';
 import '../../../view model/responsive.dart';
 import '../../res/constants.dart';
 import 'components/drawer/drawer.dart';

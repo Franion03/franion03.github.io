@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../model/certificate_model.dart';
+import '../../../../model/linkedin_certificates.dart';
 import '../../../../res/constants.dart';
 import '../../../view model/getx_controllers/certification_controller.dart';
 import 'certificates_details.dart';
@@ -11,10 +12,11 @@ class CertificateGrid extends StatelessWidget {
   final controller = Get.put(CertificationController());
   @override
   Widget build(BuildContext context) {
+    final combinedList = [...linkedinCertificates, ...certificateList];
     return GridView.builder(
       shrinkWrap: true,
       padding: const EdgeInsets.symmetric(horizontal: 30),
-      itemCount: certificateList.length,
+      itemCount: combinedList.length,
       gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: crossAxisCount, childAspectRatio: ratio),
       itemBuilder: (context, index) {

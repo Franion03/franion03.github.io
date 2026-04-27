@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:franciscoCV/view/history/components/inner_timeline.dart';
+import 'package:franciscocv/view/history/components/inner_timeline.dart';
 import 'package:timelines_plus/timelines_plus.dart' hide Timeline;
 
 import '../../../model/companies.dart';
@@ -14,8 +14,10 @@ class HistoryGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Merge LinkedIn data with static data
-    final List<Timeline> allHistory = [...linkedinCompanies, ...companies];
+    // Merge LinkedIn data with static data, preferring LinkedIn entries on name conflict
+    final linkedinNames = linkedinCompanies.map((e) => e.name).toSet();
+    final deduped = companies.where((c) => !linkedinNames.contains(c.name)).toList();
+    final List<Timeline> allHistory = [...linkedinCompanies, ...deduped];
 
     return FixedTimeline.tileBuilder(
           theme: TimelineThemeData(
