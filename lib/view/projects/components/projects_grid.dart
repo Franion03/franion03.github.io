@@ -19,7 +19,7 @@ class ProjectGrid extends StatelessWidget {
       gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: crossAxisCount, childAspectRatio: ratio),
       itemBuilder: (context, index) {
-        return Obx(() => AnimatedContainer(
+        return AnimatedContainer(
             duration: const Duration(milliseconds: 200),
             margin: const EdgeInsets.symmetric(
                 vertical: defaultPadding, horizontal: defaultPadding),
@@ -28,7 +28,7 @@ class ProjectGrid extends StatelessWidget {
                 color: Colors.transparent,
             ),
             child: ProjectStack(index: index)
-        ));
+        );
       },
     );
   }

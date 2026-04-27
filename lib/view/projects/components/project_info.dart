@@ -57,14 +57,14 @@ class _ProjectStackState extends State<ProjectStack>
     final project = projectList[widget.index];
 
     return Obx(() {
-      final isHovered = controller.hovers[widget.index];
+      final isHovered = controller.hovers[widget.index] ?? false;
       return AnimatedContainer(
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeOutCubic,
         transform: isHovered
             ? (Matrix4.identity()
-              ..translate(0, -8, 0)
-              ..scale(1.02))
+              ..translateByDouble(0, -8, 0, 1)
+              ..scaleByDouble(1.02, 1.02, 1, 1))
             : Matrix4.identity(),
         child: InkWell(
           onHover: (value) => controller.onHover(widget.index, value),

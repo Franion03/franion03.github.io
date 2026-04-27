@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'dart:js' as js;
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../view/intro/components/download_button.dart';
 import '../../view/projects/components/title_text.dart';
@@ -30,7 +30,7 @@ class WelcomePageDesk extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,),
               //          onPressed:  () 
               //           {
-              //          js.context.callMethod("open", ["https://www.facebook.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://www.facebook.com/naveenjujaray"));
               //          },
               //          )),
               //   ),
@@ -39,7 +39,7 @@ class WelcomePageDesk extends StatelessWidget {
               //       child:  GestureDetector(
               //         child: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,),
               //         onTap: () {
-              //          js.context.callMethod("open", ["https://twitter.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://twitter.com/naveenjujaray"));
               //          },
               //         ),
               //          ),
@@ -49,7 +49,7 @@ class WelcomePageDesk extends StatelessWidget {
                                       icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
                                        onPressed: ()
                                        {
-                                       js.context.callMethod("open", ["https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"]);
+                                       launchUrl(Uri.parse("https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"));
                                        },
                                        )),
               //   Expanded(
@@ -58,7 +58,7 @@ class WelcomePageDesk extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,),
               //          onPressed: ()
               //          {
-              //          js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
+              //          launchUrl(Uri.parse("https://naveenjujaray.js.org"));
               //          },
               //          )),
               //   ),
@@ -68,7 +68,7 @@ class WelcomePageDesk extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.github, size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://www.github.com/naveenjujaray"));
               //          },
               //         )),
               //   ),
@@ -78,7 +78,7 @@ class WelcomePageDesk extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://www.gitlab.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://www.gitlab.com/naveenjujaray"));
               //          },
               //         )),
               //   ),
@@ -88,7 +88,7 @@ class WelcomePageDesk extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.medium, size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://medium.com/@naveenjujaray"));
               //          },
               //          )),
               //   ),
@@ -98,7 +98,7 @@ class WelcomePageDesk extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.dev,size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://dev.to/naveenjujaray"));
               //          },
               //          )),
               //   ),
@@ -108,7 +108,7 @@ class WelcomePageDesk extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://www.reddit.com/user/jujaraynaveen"]);
+              //          launchUrl(Uri.parse("https://www.reddit.com/user/jujaraynaveen"));
               //          },
               //          )),
               //   ),
@@ -156,7 +156,7 @@ class WelcomePageTab extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,),
               //          onPressed:  () 
               //           {
-              //          js.context.callMethod("open", ["https://www.facebook.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://www.facebook.com/naveenjujaray"));
               //          },
               //          )),
               //   ),
@@ -165,7 +165,7 @@ class WelcomePageTab extends StatelessWidget {
               //       child:  GestureDetector(
               //         child: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,),
               //         onTap: () {
-              //          js.context.callMethod("open", ["https://twitter.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://twitter.com/naveenjujaray"));
               //          },
               //         ),
               //          ),
@@ -175,7 +175,7 @@ class WelcomePageTab extends StatelessWidget {
                                       icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
                                        onPressed: ()
                                        {
-                                       js.context.callMethod("open", ["https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"]);
+                                       launchUrl(Uri.parse("https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"));
                                        },
                                        )),
               //   Expanded(
@@ -184,7 +184,7 @@ class WelcomePageTab extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,),
               //          onPressed: ()
               //          {
-              //          js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
+              //          launchUrl(Uri.parse("https://naveenjujaray.js.org"));
               //          },
               //          )),
               //   ),
@@ -194,7 +194,7 @@ class WelcomePageTab extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.github, size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://www.github.com/naveenjujaray"));
               //          },
               //         )),
               //   ),
@@ -204,7 +204,7 @@ class WelcomePageTab extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://www.gitlab.com/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://www.gitlab.com/naveenjujaray"));
               //          },
               //         )),
               //   ),
@@ -214,7 +214,7 @@ class WelcomePageTab extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.medium, size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://medium.com/@naveenjujaray"));
               //          },
               //          )),
               //   ),
@@ -224,7 +224,7 @@ class WelcomePageTab extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.dev,size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
+              //          launchUrl(Uri.parse("https://dev.to/naveenjujaray"));
               //          },
               //          )),
               //   ),
@@ -234,7 +234,7 @@ class WelcomePageTab extends StatelessWidget {
               //         icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
               //         onPressed: ()
               //         {
-              //          js.context.callMethod("open", ["https://www.reddit.com/user/jujaraynaveen"]);
+              //          launchUrl(Uri.parse("https://www.reddit.com/user/jujaraynaveen"));
               //          },
               //          )),
               //   ),
@@ -298,7 +298,7 @@ class WelcomePageMob extends StatelessWidget {
                       icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ), 
                       onPressed: ()
                          {
-                         js.context.callMethod("open", ["https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"]);
+                         launchUrl(Uri.parse("https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"));
                          },
                          )),
                   // Container( width: 55,height: 55,

@@ -30,25 +30,22 @@ class TimelineMessage {
 }
 
 List<Timeline> companies = [
-  Timeline(
-    'Odyssey Robotics',
-    messages: [
-      TimelineMessage('Flutter', 'Developer, use of git and rest api '),
-      TimelineMessage('Flutter', 'Frontend Scrum Master'),
-      TimelineMessage('Python', 'Ml Pipeline'),
-      TimelineMessage('Python', 'CNN  for video classification'),
-    ],
-    date: '2020'
-  ),
-  Timeline(
-    'Swisscom',
-    messages: [
-      TimelineMessage('Typescript', 'Full Stack developer'),
-      TimelineMessage('Golang', 'Full Stack developer'),
-      TimelineMessage('Gitlab', 'Use of gitlab ci/cd for deployment and testing'),
-      TimelineMessage('Aws', 'working on application for help other apps to migrate to aws'),
-    ],
-    date: '2023'
-  ),
-  Timeline.complete(),
+  Timeline('Odyssey Robotics',
+      messages: [
+        TimelineMessage('Flutter', 'Developer, use of git and rest api '),
+        TimelineMessage('Flutter', 'Frontend Scrum Master'),
+        TimelineMessage('Python', 'Ml Pipeline'),
+        TimelineMessage('Python', 'CNN  for video classification'),
+      ],
+      date: '2020'),
+  Timeline('Swisscom',
+      messages: [
+        TimelineMessage('Typescript', 'Full Stack developer'),
+        TimelineMessage('Golang', 'Full Stack developer'),
+        TimelineMessage(
+            'Gitlab', 'Use of gitlab ci/cd for deployment and testing'),
+        TimelineMessage('Aws',
+            'working on application for help other apps to migrate to aws'),
+      ],
+      date: '2023'),
 ];

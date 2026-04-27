@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'dart:js' as js;
+import 'package:url_launcher/url_launcher.dart';
 
 class BlogCardDesk extends StatelessWidget {
   @override
@@ -24,7 +24,7 @@ class BlogCardDesk extends StatelessWidget {
                SizedBox(width: 25,),
                 InkWell(
                 onTap: () {
-                  js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
+                  launchUrl(Uri.parse("https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"));
                    },
                  child: Container(
                   width: 450.0,
@@ -58,7 +58,7 @@ class BlogCardDesk extends StatelessWidget {
             SizedBox(width: 30,),
             InkWell(
                   onTap: () {
-                           js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
+                           launchUrl(Uri.parse("https://naveenjujaray.js.org/buildblogusingjekyll"));
                            },
                           child: Container(
                 width: 450.0,
@@ -92,7 +92,7 @@ class BlogCardDesk extends StatelessWidget {
             SizedBox(width: 30,),
              InkWell(
                       onTap: () {
-                             js.context.callMethod("open", ["https://naveenjujaray.js.org/flutter-web-install"]);
+                             launchUrl(Uri.parse("https://naveenjujaray.js.org/flutter-web-install"));
                              },
                             child: Container(
                   width: 450.0,
@@ -156,7 +156,7 @@ class BlogCardTab extends StatelessWidget {
                children: [
                   InkWell(
                     onTap: () {
-                             js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
+                             launchUrl(Uri.parse("https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"));
                              },
                             child: Container(
                   width: 580.0,
@@ -185,7 +185,7 @@ class BlogCardTab extends StatelessWidget {
               SizedBox(height: 30,),
               InkWell(
                     onTap: () {
-                             js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
+                             launchUrl(Uri.parse("https://naveenjujaray.js.org/buildblogusingjekyll"));
                              },
                             child: Container(
                   width: 580,
@@ -214,7 +214,7 @@ class BlogCardTab extends StatelessWidget {
               SizedBox(height: 30,),
                InkWell(
                           onTap: () {
-                                 js.context.callMethod("open", ["https://naveenjujaray.js.org/flutter-web-install"]);
+                                 launchUrl(Uri.parse("https://naveenjujaray.js.org/flutter-web-install"));
                                  },
                                 child: Container(
                         width: 580.0,
@@ -273,7 +273,7 @@ class BlogCardMob extends StatelessWidget {
                  children: [
                     InkWell(
                       onTap: () {
-                             js.context.callMethod("open", ["https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"]);
+                             launchUrl(Uri.parse("https://medium.com/@naveenjujaray/walls-ad-free-wallpapers-a-flutter-app-beae03309dc9"));
                              },
                             child: Container(
                     width: 400.0,
@@ -304,7 +304,7 @@ class BlogCardMob extends StatelessWidget {
                 SizedBox(height: 30,),
                 InkWell(
                       onTap: () {
-                             js.context.callMethod("open", ["https://naveenjujaray.js.org/buildblogusingjekyll"]);
+                             launchUrl(Uri.parse("https://naveenjujaray.js.org/buildblogusingjekyll"));
                              },
                             child: Container(
                     width: 400,
@@ -335,7 +335,7 @@ class BlogCardMob extends StatelessWidget {
                 SizedBox(height: 30,),
                 InkWell(
                               onTap: () {
-                                     js.context.callMethod("open", ["https://naveenjujaray.js.org/flutter-web-install"]);
+                                     launchUrl(Uri.parse("https://naveenjujaray.js.org/flutter-web-install"));
                                      },
                                     child: Container(
                             width: 400.0,

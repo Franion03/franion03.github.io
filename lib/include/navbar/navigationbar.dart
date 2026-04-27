@@ -1,4 +1,6 @@
-import 'dart:html' as html;
+import 'package:franciscocv/utils/platform_utils_stub.dart'
+    if (dart.library.html) 'package:franciscocv/utils/platform_utils_web.dart'
+    as platform_utils;
 
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +52,7 @@ class NavbarTbDt extends StatelessWidget {
         children: <Widget>[
           GestureDetector(
               onTap: () {
-                html.window.location.reload();
+                platform_utils.reloadPage();
               },
               child: NavbarLogo()),
           SingleChildScrollView(
@@ -111,7 +113,7 @@ class NavbarMob extends StatelessWidget {
         children: <Widget>[
           GestureDetector(
               onTap: () {
-                html.window.location.reload();
+                platform_utils.reloadPage();
               },
               child: NavbarLogo()),
           Expanded(

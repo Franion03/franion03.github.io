@@ -34,12 +34,12 @@ class CertificateGrid extends StatelessWidget {
                   BoxShadow(
                     color: Colors.pink,
                     offset: const Offset(-2, 0),
-                    blurRadius: controller.hovers[index] ? 20 : 10,
+                    blurRadius: controller.hovers[index] ?? false ? 20 : 10,
                   ),
                   BoxShadow(
                     color: Colors.blue,
                     offset: const Offset(2, 0),
-                    blurRadius: controller.hovers[index] ? 20 : 10,
+                    blurRadius: controller.hovers[index] ?? false ? 20 : 10,
                   )
                 ]),
             child: CertificateStack(index: index)

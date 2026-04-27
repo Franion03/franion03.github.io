@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:js' as js;
+import 'package:url_launcher/url_launcher.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -48,7 +48,7 @@ class AchieveDesk extends StatelessWidget {
               Text('Walls',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
               InkWell(
                 onTap: () {
-                   js.context.callMethod("open", ["https://play.google.com/store/apps/details?id=com.naveenjujaray.walls"]);
+                   launchUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.naveenjujaray.walls"));
                 },
                 child: Text('Available on Playstore',style: TextStyle(fontSize: 18, color: Colors.green[900]),textAlign: TextAlign.center,)),
           ],
@@ -80,7 +80,7 @@ class AchieveDesk extends StatelessWidget {
               Text('Blog',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
               InkWell(
                 onTap: () {
-                   js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
+                   launchUrl(Uri.parse("https://naveenjujaray.js.org"));
                 },
                 child: Text('Check it out !',style: TextStyle(fontSize: 18, color: Colors.green[900]),textAlign: TextAlign.center,)),
           ],
@@ -142,7 +142,7 @@ class AchieveTab extends StatelessWidget {
                   Text('Walls',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
                   InkWell(
                     onTap: () {
-                       js.context.callMethod("open", ["https://play.google.com/store/apps/details?id=com.naveenjujaray.walls"]);
+                       launchUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.naveenjujaray.walls"));
                     },
                     child: Text('Available on Playstore',style: TextStyle(fontSize: 18, color: Colors.green[900]),textAlign: TextAlign.center,)),
             ],
@@ -174,7 +174,7 @@ class AchieveTab extends StatelessWidget {
                   Text('Blog',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
                   InkWell(
                     onTap: () {
-                       js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
+                       launchUrl(Uri.parse("https://naveenjujaray.js.org"));
                     },
                     child: Text('Check it out !',style: TextStyle(fontSize: 18, color: Colors.green[900]),textAlign: TextAlign.center,)),
             ],
@@ -239,7 +239,7 @@ class AchieveMob extends StatelessWidget {
                   Text('Walls',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
                   InkWell(
                     onTap: () {
-                       js.context.callMethod("open", ["https://play.google.com/store/apps/details?id=com.naveenjujaray.walls"]);
+                       launchUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.naveenjujaray.walls"));
                     },
                     child: Text('Available on Playstore',style: TextStyle(fontSize: 18, color: Colors.green[900]),textAlign: TextAlign.center,)),
             ],
@@ -271,7 +271,7 @@ class AchieveMob extends StatelessWidget {
                   Text('Blog',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
                   InkWell(
                     onTap: () {
-                       js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
+                       launchUrl(Uri.parse("https://naveenjujaray.js.org"));
                     },
                     child: Text('Check it out !',style: TextStyle(fontSize: 18, color: Colors.green[900]),textAlign: TextAlign.center,)),
             ],
