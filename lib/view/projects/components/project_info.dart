@@ -63,8 +63,8 @@ class _ProjectStackState extends State<ProjectStack>
         curve: Curves.easeOutCubic,
         transform: isHovered
             ? (Matrix4.identity()
-              ..translateByDouble(0, -8, 0, 1)
-              ..scaleByDouble(1.02, 1.02, 1, 1))
+              ..translateByDouble(0.0, -8.0, 0.0, 1.0)
+              ..scaleByDouble(1.02, 1.02, 1.0, 1.0))
             : Matrix4.identity(),
         child: InkWell(
           onHover: (value) => controller.onHover(widget.index, value),
