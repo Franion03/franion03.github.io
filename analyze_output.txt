@@ -1,0 +1,940 @@
+Analyzing franion03.github.io...                                
+
+   info • Parameter 'key' could be a super parameter • lib/configure/centeredview.dart:5:9 • use_super_parameters
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/configure/centeredview.dart:9:12 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/configure/centeredview.dart:10:16 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/centeredview.dart:11:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/centeredview.dart:12:15 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/configure/centeredview.dart:19:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/configure/centeredview.dart:27:24 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/configure/centeredview.dart:37:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/configure/centeredview.dart:45:24 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/configure/centeredview.dart:55:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/configure/centeredview.dart:63:24 • prefer_const_constructors
+   info • The constant name 'SkillsRoute' isn't a lowerCamelCase identifier • lib/configure/routing.dart:13:14 • constant_identifier_names
+   info • The constant name 'ProjectsRoute' isn't a lowerCamelCase identifier • lib/configure/routing.dart:14:14 • constant_identifier_names
+   info • The constant name 'EducationRoute' isn't a lowerCamelCase identifier • lib/configure/routing.dart:15:14 • constant_identifier_names
+   info • The constant name 'AchievementsRoute' isn't a lowerCamelCase identifier • lib/configure/routing.dart:16:14 • constant_identifier_names
+   info • The constant name 'ContactRoute' isn't a lowerCamelCase identifier • lib/configure/routing.dart:17:14 • constant_identifier_names
+   info • The constant name 'BlogRoute' isn't a lowerCamelCase identifier • lib/configure/routing.dart:18:14 • constant_identifier_names
+   info • The constant name 'HomeRoute' isn't a lowerCamelCase identifier • lib/configure/routing.dart:19:14 • constant_identifier_names
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:24:28 • prefer_const_constructors
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/configure/routing.dart:26:28 • deprecated_member_use
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/configure/routing.dart:33:9 • deprecated_member_use
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/configure/routing.dart:40:9 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:41:16 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:41:40 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:42:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:42:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:43:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:43:38 • prefer_const_constructors
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/configure/routing.dart:47:9 • deprecated_member_use
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/configure/routing.dart:54:9 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:55:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:55:44 • prefer_const_constructors
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/configure/routing.dart:60:28 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/configure/routing.dart:65:35 • prefer_const_constructors
+   info • The file name 'Achievement.dart' isn't a lower_case_with_underscores identifier • lib/include/CenteringOfPages/Achievement.dart:1:1 • file_names
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Achievement.dart:5:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Achievement.dart:19:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Achievement.dart:36:9 • use_super_parameters
+   info • The file name 'Blogcenter.dart' isn't a lower_case_with_underscores identifier • lib/include/CenteringOfPages/Blogcenter.dart:1:1 • file_names
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Blogcenter.dart:6:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Blogcenter.dart:20:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Blogcenter.dart:37:9 • use_super_parameters
+   info • The file name 'ContactCenter.dart' isn't a lower_case_with_underscores identifier • lib/include/CenteringOfPages/ContactCenter.dart:1:1 • file_names
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/ContactCenter.dart:6:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:9:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:10:18 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/CenteringOfPages/ContactCenter.dart:11:20 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:12:13 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/ContactCenter.dart:20:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:23:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:24:18 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/CenteringOfPages/ContactCenter.dart:27:19 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:28:11 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/ContactCenter.dart:36:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:39:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:40:18 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/CenteringOfPages/ContactCenter.dart:43:19 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/ContactCenter.dart:44:11 • prefer_const_constructors
+   info • The file name 'Education.dart' isn't a lower_case_with_underscores identifier • lib/include/CenteringOfPages/Education.dart:1:1 • file_names
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Education.dart:6:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:9:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:10:18 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/CenteringOfPages/Education.dart:11:20 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:12:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:12:29 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Education.dart:20:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:23:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:24:18 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/CenteringOfPages/Education.dart:27:19 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:28:11 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/Education.dart:37:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:40:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:41:18 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/CenteringOfPages/Education.dart:44:19 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/CenteringOfPages/Education.dart:45:11 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/proficiency.dart:6:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/proficiency.dart:21:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/proficiency.dart:38:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/skills_desk.dart:6:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/skills_desk.dart:21:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter • lib/include/CenteringOfPages/skills_desk.dart:38:9 • use_super_parameters
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/achievementsmain.dart:6:7 • use_key_in_widget_constructors
+   info • Unnecessary instance of 'Container' • lib/include/Rows/achievementsmain.dart:9:12 • avoid_unnecessary_containers
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:13:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:13:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:14:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:15:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:16:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:17:11 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/achievementsmain.dart:20:20 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:25:19 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:29:31 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:29:31 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:30:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:32:37 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:33:29 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:34:41 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:37:29 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:48:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:48:35 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:57:20 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:61:31 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:61:31 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:62:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:64:37 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:65:29 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:66:41 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:69:29 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:78:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:79:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:80:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:80:34 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/achievementsmain.dart:99:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/achievementsmain.dart:103:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:108:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:108:44 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:109:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:110:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:111:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:112:13 • prefer_const_constructors
+   info • Unnecessary instance of 'Container' • lib/include/Rows/achievementsmain.dart:115:22 • avoid_unnecessary_containers
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:119:23 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:123:35 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:123:35 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:124:37 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:126:41 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:127:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:128:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:131:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:142:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:142:39 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:151:24 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:155:35 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:155:35 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:156:37 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:158:41 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:159:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:160:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:163:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:172:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:173:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:174:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:174:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:183:23 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/achievementsmain.dart:196:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/achievementsmain.dart:200:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:205:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:205:44 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:206:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:207:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:208:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:209:13 • prefer_const_constructors
+   info • Unnecessary instance of 'Container' • lib/include/Rows/achievementsmain.dart:212:22 • avoid_unnecessary_containers
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:216:23 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:220:35 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:220:35 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:221:37 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:223:41 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:224:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:225:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:228:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:239:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:239:39 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:248:24 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:252:35 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:252:35 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:253:37 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:255:41 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/achievementsmain.dart:256:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/achievementsmain.dart:257:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:260:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:269:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:270:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:271:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:271:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/achievementsmain.dart:280:23 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/blogcardmain.dart:5:7 • use_key_in_widget_constructors
+   info • Unnecessary instance of 'Container' • lib/include/Rows/blogcardmain.dart:8:12 • avoid_unnecessary_containers
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:12:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:12:32 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:13:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:14:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:15:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:16:11 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/blogcardmain.dart:19:28 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:24:16 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:32:28 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:32:28 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:33:31 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:35:35 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:36:27 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:37:39 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:40:29 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:49:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:49:75 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:50:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:52:60 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:58:13 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:66:26 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:66:26 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:67:29 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:69:35 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:70:27 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:71:37 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:74:29 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:83:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:83:107 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:84:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:86:58 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:92:13 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:100:28 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:100:28 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:101:31 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:103:37 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:104:29 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:105:39 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:108:29 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:117:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:117:59 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:118:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:120:68 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:126:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:131:10 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/blogcardmain.dart:138:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/blogcardmain.dart:142:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:147:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:147:34 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:148:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:149:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:150:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:151:13 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:164:28 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:164:28 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:165:31 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:167:37 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:168:29 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:169:39 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:176:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:176:75 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:177:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:179:60 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:185:15 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:193:28 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:193:28 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:194:31 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:196:37 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:197:29 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:198:39 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:205:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:205:109 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:206:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:208:60 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:214:15 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:222:34 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:222:34 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:223:37 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:225:41 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:226:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:227:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:234:27 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:234:63 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:235:27 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:237:72 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:243:17 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/blogcardmain.dart:255:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/blogcardmain.dart:259:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:264:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:264:34 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:265:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:266:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:267:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:268:14 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:281:30 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:281:30 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:282:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:284:39 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:285:31 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:286:41 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:293:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:293:39 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:293:95 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:294:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:297:52 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:304:17 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:312:30 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:312:30 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:313:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:315:39 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:316:31 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:317:41 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:324:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:324:39 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:324:129 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:325:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:328:52 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:335:17 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:343:38 • unnecessary_new
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:343:38 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:344:41 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:346:45 • deprecated_member_use
+   info • Unnecessary 'new' keyword • lib/include/Rows/blogcardmain.dart:347:37 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/blogcardmain.dart:348:49 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:355:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:355:67 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:356:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:358:76 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/blogcardmain.dart:364:21 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/contactpagemain.dart:8:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/contactpagemain.dart:11:12 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:16:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:17:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:20:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:22:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:24:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:29:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:31:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:33:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:48:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:50:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:58:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:63:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:65:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:67:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:81:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:83:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:91:11 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/contactpagemain.dart:101:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/contactpagemain.dart:105:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:110:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:111:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:114:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:116:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:118:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:123:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:125:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:127:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:142:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:144:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:152:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:157:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:159:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:161:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:175:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:177:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:185:13 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/contactpagemain.dart:196:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/contactpagemain.dart:200:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:205:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:206:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:209:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:211:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:213:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:219:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:221:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:223:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:238:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:240:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:248:13 • prefer_const_constructors
+   info • Unnecessary instance of 'Container' • lib/include/Rows/contactpagemain.dart:254:17 • avoid_unnecessary_containers
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:255:26 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:257:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:260:17 • prefer_const_constructors
+   info • Unnecessary instance of 'Container' • lib/include/Rows/contactpagemain.dart:264:26 • avoid_unnecessary_containers
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:276:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:278:32 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/contactpagemain.dart:288:13 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/educationmain.dart:4:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/educationmain.dart:7:12 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:12:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:12:36 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:13:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:16:15 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:22:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:23:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:26:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:33:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:35:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:40:16 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:41:17 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:43:29 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:44:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:45:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:47:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:48:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:50:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:51:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:53:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:54:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:60:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:63:15 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:69:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:70:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:73:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:80:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:82:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:87:16 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:88:17 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:90:29 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:91:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:92:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:94:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:95:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:97:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:98:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:105:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:108:15 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:114:33 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:115:45 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:118:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:125:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:127:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:132:16 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:133:17 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:135:29 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:136:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:137:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:139:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:140:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:142:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:143:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:150:19 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/educationmain.dart:158:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/educationmain.dart:162:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:167:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:167:36 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:168:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:174:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:177:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:178:34 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:184:25 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:185:37 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:188:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:194:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:196:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:207:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:208:40 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:210:33 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:211:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:212:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:214:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:215:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:217:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:218:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:220:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:221:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:226:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:233:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:236:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:237:34 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:243:25 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:244:37 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:247:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:253:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:255:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:266:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:267:40 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:269:33 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:270:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:271:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:273:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:274:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:276:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:277:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:283:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:290:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:293:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:294:34 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:300:25 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:301:37 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:304:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:310:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:312:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:323:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:324:40 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:326:33 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:327:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:328:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:330:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:331:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:333:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:334:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:340:31 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/educationmain.dart:349:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/educationmain.dart:352:12 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:357:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:357:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:358:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:366:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:367:36 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:373:25 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:374:37 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:377:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:383:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:385:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:397:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:398:21 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:401:35 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:402:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:403:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:405:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:406:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:408:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:409:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:411:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:412:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:417:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:425:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:426:36 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:432:25 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:433:37 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:436:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:442:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:444:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:456:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:457:21 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:460:35 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:461:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:462:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:464:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:465:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:467:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:468:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:474:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:482:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:483:36 • prefer_const_constructors
+   info • Unnecessary 'new' keyword • lib/include/Rows/educationmain.dart:489:25 • unnecessary_new
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/include/Rows/educationmain.dart:490:37 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:493:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:499:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:501:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:513:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:514:21 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/educationmain.dart:517:35 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:518:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:519:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:521:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:522:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:524:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:525:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/educationmain.dart:531:12 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/progressbarmain.dart:5:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/progressbarmain.dart:8:12 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:13:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:13:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:14:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:15:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:15:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:20:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:24:6 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:24:50 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:29:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:33:6 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:33:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:38:13 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/progressbarmain.dart:48:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/progressbarmain.dart:52:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:57:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:57:40 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:58:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:59:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:59:43 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:64:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:68:8 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:68:52 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:73:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:77:8 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:77:35 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:82:13 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/progressbarmain.dart:94:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/progressbarmain.dart:98:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:103:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:103:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:104:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:105:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:105:43 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:110:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:114:8 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:114:52 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:119:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:123:8 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:123:35 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/progressbarmain.dart:128:13 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/skillslogosmain.dart:6:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:9:13 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:14:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:15:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:16:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:17:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:20:11 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:24:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:26:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:27:14 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:28:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:29:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:30:14 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:31:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:32:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:33:14 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:34:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:35:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:36:14 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:37:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:38:23 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:44:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:45:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:46:14 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:47:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:48:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:49:14 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:50:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:51:23 • prefer_const_constructors
+   info • 'jsSquare' is deprecated and shouldn't be used. Use "squareJs" instead • lib/include/Rows/skillslogosmain.dart:51:47 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:52:14 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:53:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:54:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:55:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:56:14 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:57:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:60:10 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:61:10 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:61:381 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:62:10 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:62:499 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:63:10 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:63:382 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:64:10 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:64:244 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/skillslogosmain.dart:71:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:75:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:80:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:81:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:82:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:83:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:86:13 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:90:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:91:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:92:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:93:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:94:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:95:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:96:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:97:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:98:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:99:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:100:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:101:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:102:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:103:23 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:109:15 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:110:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:111:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:112:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:113:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:114:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:115:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:116:23 • prefer_const_constructors
+   info • 'jsSquare' is deprecated and shouldn't be used. Use "squareJs" instead • lib/include/Rows/skillslogosmain.dart:116:47 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:117:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:118:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:119:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:120:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:121:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:122:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:125:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:126:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:126:382 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:127:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:127:500 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:128:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:128:383 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:129:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:129:245 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/Rows/skillslogosmain.dart:137:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:141:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:146:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:147:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:148:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:149:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:152:13 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:156:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:157:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:158:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:159:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:160:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:161:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:162:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:163:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:164:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:165:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:166:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:167:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:173:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:174:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:175:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:176:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:177:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:178:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:179:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:180:23 • prefer_const_constructors
+   info • 'jsSquare' is deprecated and shouldn't be used. Use "squareJs" instead • lib/include/Rows/skillslogosmain.dart:180:47 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:181:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:182:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:183:23 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:189:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:190:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:191:16 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/skillslogosmain.dart:192:16 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:193:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:196:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:197:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:197:383 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:198:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:199:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:199:502 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:200:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:201:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:201:385 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:202:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:203:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/skillslogosmain.dart:203:247 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/welcomepagemain.dart:8:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/welcomepagemain.dart:11:12 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:18:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:19:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:20:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:23:11 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/welcomepagemain.dart:47:17 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:49:45 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:49:86 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:117:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:118:10 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/welcomepagemain.dart:120:26 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:121:16 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/welcomepagemain.dart:132:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/welcomepagemain.dart:136:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:141:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:143:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:144:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:145:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:146:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:149:13 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/welcomepagemain.dart:173:17 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:175:45 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:175:86 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:243:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:244:13 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/welcomepagemain.dart:246:24 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:247:16 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/Rows/welcomepagemain.dart:259:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/welcomepagemain.dart:263:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:268:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:270:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:271:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:272:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:273:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:276:13 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/Rows/welcomepagemain.dart:296:19 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:298:29 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:298:70 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:356:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:357:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:358:22 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/Rows/welcomepagemain.dart:360:24 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/Rows/welcomepagemain.dart:362:16 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/homepage/homemain.dart:13:9 • use_super_parameters
+   info • Invalid use of a private type in a public API • lib/include/homepage/homemain.dart:16:3 • library_private_types_in_public_api
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:42:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:53:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:62:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:71:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:79:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:87:18 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:92:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:92:37 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:96:17 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/homepage/homemain.dart:112:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:123:24 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:125:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:130:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:131:17 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/homepage/homemain.dart:142:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:153:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:155:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:160:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/homepage/homemain.dart:161:17 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:3:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:14:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:26:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/imagesmain/images.dart:29:13 • sized_box_for_whitespace
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:36:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:47:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:59:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/imagesmain/images.dart:62:12 • sized_box_for_whitespace
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:69:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:80:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:92:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/imagesmain/images.dart:95:13 • sized_box_for_whitespace
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:102:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:113:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/imagesmain/images.dart:125:7 • use_key_in_widget_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/imagesmain/images.dart:128:13 • sized_box_for_whitespace
+   info • Parameter 'key' could be a super parameter • lib/include/navbar/drawer/drawernav.dart:7:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/navbar/drawer/drawernav.dart:12:18 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/drawer/drawernav.dart:15:16 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/navbar/drawer/drawernav.dart:16:21 • prefer_const_literals_to_create_immutables
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/navbar/drawer/drawernav.dart:35:9 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/drawer/drawernav.dart:44:11 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/navbar/logo/navbarlogo.dart:5:9 • use_super_parameters
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/include/navbar/logo/navbarlogo.dart:9:12 • deprecated_member_use
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/navbar/logo/navbarlogo.dart:17:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:20:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:23:14 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/navbar/logo/navbarlogo.dart:24:19 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:25:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:25:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:26:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:26:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:27:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:27:28 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:28:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:28:28 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/navbar/logo/navbarlogo.dart:36:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:39:12 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:42:14 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/include/navbar/logo/navbarlogo.dart:43:21 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:44:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:44:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:45:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:45:40 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:46:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:46:30 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:47:13 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/logo/navbarlogo.dart:47:30 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/include/navbar/navigationbar.dart:17:9 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:26:16 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/navbar/navigationbar.dart:33:9 • use_super_parameters
+   info • 'ScreenTypeLayout' is deprecated and shouldn't be used. Use ScreenTypeLayout.builder instead for performance improvements • lib/include/navbar/navigationbar.dart:36:12 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:37:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:37:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:38:15 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:38:38 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:39:16 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:39:40 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/navbar/navigationbar.dart:45:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/navbar/navigationbar.dart:48:12 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:57:22 • prefer_const_constructors
+   info • Unnecessary instance of 'Container' • lib/include/navbar/navigationbar.dart:60:20 • avoid_unnecessary_containers
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:92:27 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/include/navbar/navigationbar.dart:105:9 • use_super_parameters
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/include/navbar/navigationbar.dart:108:12 • sized_box_for_whitespace
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:118:22 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:128:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/include/navbar/navigationbar.dart:132:19 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/main.dart:18:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/main.dart:51:15 • prefer_const_constructors
+   info • Unnecessary 'this.' qualifier • lib/model/companies.dart:9:9 • unnecessary_this
+   info • Unnecessary 'this.' qualifier • lib/model/companies.dart:10:9 • unnecessary_this
+   info • Unnecessary 'this.' qualifier • lib/model/companies.dart:11:9 • unnecessary_this
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:33:3 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:35:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:36:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:37:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:38:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:41:3 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:43:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:44:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:45:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/companies.dart:47:9 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:4:3 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:7:7 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:8:7 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:12:3 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:15:7 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:16:7 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:20:3 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:23:7 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/model/linkedin_data.dart:24:7 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/achievementspage.dart:6:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/achievementspage.dart:10:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/achievementspage.dart:11:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/achievementspage.dart:12:42 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/blogpage.dart:6:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/contactpage.dart:6:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/contactpage.dart:10:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/contactpage.dart:11:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/contactpage.dart:12:42 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/educationpage.dart:6:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/educationpage.dart:10:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/educationpage.dart:11:42 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/educationpage.dart:12:42 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/footer.dart:4:7 • use_key_in_widget_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/footer.dart:15:7 • use_key_in_widget_constructors
+   info • Unnecessary instance of 'Container' • lib/pages/footer.dart:18:12 • avoid_unnecessary_containers
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/footer.dart:31:7 • use_key_in_widget_constructors
+   info • Unnecessary instance of 'Container' • lib/pages/footer.dart:34:12 • avoid_unnecessary_containers
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/footer.dart:47:7 • use_key_in_widget_constructors
+   info • Parameter 'key' could be a super parameter • lib/pages/homepage.dart:10:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/pages/homepage.dart:15:23 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/homepage.dart:25:47 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/homepage.dart:25:71 • prefer_const_constructors
+   info • Parameter 'key' could be a super parameter • lib/pages/layoutpage.dart:11:9 • use_super_parameters
+   info • Use 'const' with the constructor to improve performance • lib/pages/layoutpage.dart:17:20 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/layoutpage.dart:22:13 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/progresspage.dart:6:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/progresspage.dart:10:41 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/progresspage.dart:11:43 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/progresspage.dart:12:42 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/skillspage.dart:7:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/skillspage.dart:11:41 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/skillspage.dart:12:43 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/skillspage.dart:13:42 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/pages/welcome.dart:6:7 • use_key_in_widget_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/welcome.dart:10:41 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/welcome.dart:11:43 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/pages/welcome.dart:12:42 • prefer_const_constructors
+   info • 'dart:html' is deprecated and shouldn't be used. Use package:web and dart:js_interop instead • lib/utils/platform_utils_web.dart:1:1 • deprecated_member_use
+   info • Don't use web-only libraries outside Flutter web plugins • lib/utils/platform_utils_web.dart:1:1 • avoid_web_libraries_in_flutter
+   info • Constructors in '@immutable' classes should be declared as 'const' • lib/view/certifications/certifications.dart:9:4 • prefer_const_constructors_in_immutables
+   info • Constructors in '@immutable' classes should be declared as 'const' • lib/view/history/components/history_grid.dart:11:3 • prefer_const_constructors_in_immutables
+   info • Use 'const' with the constructor to improve performance • lib/view/history/components/history_grid.dart:29:16 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/view/history/components/history_grid.dart:30:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/view/history/components/history_grid.dart:34:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/view/history/components/history_grid.dart:43:22 • prefer_const_constructors
+   info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/view/history/components/history_grid.dart:68:28 • prefer_const_literals_to_create_immutables
+   info • Use 'const' with the constructor to improve performance • lib/view/history/components/history_grid.dart:69:19 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/view/history/components/history_grid.dart:74:19 • prefer_const_constructors
+   info • Constructors for public widgets should have a named 'key' parameter • lib/view/history/components/inner_timeline.dart:6:9 • use_key_in_widget_constructors
+   info • Constructors in '@immutable' classes should be declared as 'const' • lib/view/history/history.dart:9:4 • prefer_const_constructors_in_immutables
+   info • Parameter 'key' could be a super parameter • lib/view/intro/components/animated_texts_componenets.dart:7:9 • use_super_parameters
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/view/intro/components/side_menu_button.dart:27:52 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/view/intro/components/side_menu_button.dart:30:46 • deprecated_member_use
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/view/intro/components/social_icon.dart:17:38 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/view/main/components/drawer/knowledge.dart:15:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/view/projects/components/image_viewer.dart:8:27 • prefer_const_constructors
+   info • Use a 'SizedBox' to add whitespace to a layout • lib/view/projects/components/image_viewer.dart:16:20 • sized_box_for_whitespace
+   info • Constructors in '@immutable' classes should be declared as 'const' • lib/view/projects/project_view.dart:7:3 • prefer_const_constructors_in_immutables
+
+936 issues found. (ran in 1.4s)

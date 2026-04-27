@@ -75,7 +75,7 @@ class AchieveDesk extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-              Icon(FontAwesomeIcons.bloggerB,size: 170, color: Colors.redAccent,),
+              FaIcon(FontAwesomeIcons.bloggerB,size: 170, color: Colors.redAccent,),
               SizedBox(height: 5,),
               Text('Blog',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
               InkWell(
@@ -169,7 +169,7 @@ class AchieveTab extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-                  Icon(FontAwesomeIcons.bloggerB,size: 170, color: Colors.redAccent,),
+                  FaIcon(FontAwesomeIcons.bloggerB,size: 170, color: Colors.redAccent,),
                   SizedBox(height: 5,),
                   Text('Blog',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
                   InkWell(
@@ -266,7 +266,7 @@ class AchieveMob extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-                  Icon(FontAwesomeIcons.bloggerB,size: 120, color: Colors.redAccent,),
+                  FaIcon(FontAwesomeIcons.bloggerB,size: 120, color: Colors.redAccent,),
                   SizedBox(height: 5,),
                   Text('Blog',style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),textAlign: TextAlign.center,),
                   InkWell(

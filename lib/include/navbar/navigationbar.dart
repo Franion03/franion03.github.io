@@ -129,7 +129,7 @@ class NavbarMob extends StatelessWidget {
           ),
           IconButton(
             alignment: Alignment.topRight,
-            icon: Icon(
+            icon: FaIcon(
               FontAwesomeIcons.bars,
             ),
             onPressed: () {

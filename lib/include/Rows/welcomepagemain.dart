@@ -27,7 +27,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,),
+              //         icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,),
               //          onPressed:  () 
               //           {
               //          launchUrl(Uri.parse("https://www.facebook.com/naveenjujaray"));
@@ -37,7 +37,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child:  GestureDetector(
-              //         child: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,),
+              //         child: FaIcon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,),
               //         onTap: () {
               //          launchUrl(Uri.parse("https://twitter.com/naveenjujaray"));
               //          },
@@ -46,7 +46,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   ),
                 Container( width: 60,height: 60,
                                     child: IconButton(
-                                      icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
+                                      icon: FaIcon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
                                        onPressed: ()
                                        {
                                        launchUrl(Uri.parse("https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"));
@@ -55,7 +55,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,),
+              //         icon: FaIcon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,),
               //          onPressed: ()
               //          {
               //          launchUrl(Uri.parse("https://naveenjujaray.js.org"));
@@ -65,7 +65,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.github, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.github, size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://www.github.com/naveenjujaray"));
@@ -75,7 +75,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://www.gitlab.com/naveenjujaray"));
@@ -85,7 +85,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.medium, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.medium, size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://medium.com/@naveenjujaray"));
@@ -95,7 +95,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.dev,size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.dev,size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://dev.to/naveenjujaray"));
@@ -105,7 +105,7 @@ class WelcomePageDesk extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://www.reddit.com/user/jujaraynaveen"));
@@ -153,7 +153,7 @@ class WelcomePageTab extends StatelessWidget {
                   //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,),
+              //         icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,),
               //          onPressed:  () 
               //           {
               //          launchUrl(Uri.parse("https://www.facebook.com/naveenjujaray"));
@@ -163,7 +163,7 @@ class WelcomePageTab extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child:  GestureDetector(
-              //         child: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,),
+              //         child: FaIcon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,),
               //         onTap: () {
               //          launchUrl(Uri.parse("https://twitter.com/naveenjujaray"));
               //          },
@@ -172,7 +172,7 @@ class WelcomePageTab extends StatelessWidget {
               //   ),
                 Container( width: 60,height: 60,
                                     child: IconButton(
-                                      icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
+                                      icon: FaIcon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ),
                                        onPressed: ()
                                        {
                                        launchUrl(Uri.parse("https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"));
@@ -181,7 +181,7 @@ class WelcomePageTab extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,),
+              //         icon: FaIcon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,),
               //          onPressed: ()
               //          {
               //          launchUrl(Uri.parse("https://naveenjujaray.js.org"));
@@ -191,7 +191,7 @@ class WelcomePageTab extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.github, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.github, size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://www.github.com/naveenjujaray"));
@@ -201,7 +201,7 @@ class WelcomePageTab extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://www.gitlab.com/naveenjujaray"));
@@ -211,7 +211,7 @@ class WelcomePageTab extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.medium, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.medium, size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://medium.com/@naveenjujaray"));
@@ -221,7 +221,7 @@ class WelcomePageTab extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.dev,size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.dev,size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://dev.to/naveenjujaray"));
@@ -231,7 +231,7 @@ class WelcomePageTab extends StatelessWidget {
               //   Expanded(
               //                     child: Container( width: 60,height: 60,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,), 
               //         onPressed: ()
               //         {
               //          launchUrl(Uri.parse("https://www.reddit.com/user/jujaraynaveen"));
@@ -279,7 +279,7 @@ class WelcomePageMob extends StatelessWidget {
                 children: [
                   // Container( width: 55,height: 55,
                   //   child: IconButton(
-                  //     icon: Icon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,), 
+                  //     icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.blue, size: 40,), 
                   //     onPressed: () 
                   //         {
                   //        js.context.callMethod("open", ["https://www.facebook.com/naveenjujaray"]);
@@ -287,7 +287,7 @@ class WelcomePageMob extends StatelessWidget {
                   //        )),
                   // Container( width: 55,height: 55,
                   //   child: IconButton(
-                  //     icon: Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,), 
+                  //     icon: FaIcon(FontAwesomeIcons.twitter, color: Colors.lightBlue, size: 40,), 
                   //     onPressed: ()
                   //        {
                   //        js.context.callMethod("open", ["https://twitter.com/naveenjujaray"]);
@@ -295,7 +295,7 @@ class WelcomePageMob extends StatelessWidget {
                   //        )),
                   Container( width: 55,height: 55,
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ), 
+                      icon: FaIcon(FontAwesomeIcons.linkedin, color: Color.fromRGBO(40,103,178,1), size: 40, ), 
                       onPressed: ()
                          {
                          launchUrl(Uri.parse("https://www.linkedin.com/in/francisco-javier-quiles-ruiz-b25563195/"));
@@ -303,7 +303,7 @@ class WelcomePageMob extends StatelessWidget {
                          )),
                   // Container( width: 55,height: 55,
                   //   child: IconButton(
-                  //     icon: Icon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,), 
+                  //     icon: FaIcon(FontAwesomeIcons.bloggerB, color: Colors.red, size: 40,), 
                   //     onPressed: ()
                   //        {
                   //        js.context.callMethod("open", ["https://naveenjujaray.js.org"]);
@@ -311,7 +311,7 @@ class WelcomePageMob extends StatelessWidget {
                   //        )),
                   // Container( width: 55,height: 55,
                   //   child: IconButton(
-                  //     icon: Icon(FontAwesomeIcons.github,  size: 40,), onPressed: ()
+                  //     icon: FaIcon(FontAwesomeIcons.github,  size: 40,), onPressed: ()
                   //       {
                   //        js.context.callMethod("open", ["https://www.github.com/naveenjujaray"]);
                   //        },
@@ -322,7 +322,7 @@ class WelcomePageMob extends StatelessWidget {
               // children: [
               //    Container( width: 55,height: 55,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.gitlab, color: Colors.orange, size: 40,), 
               //         onPressed: ()
               //           {
               //            js.context.callMethod("open", ["https://www.gitlab.com/naveenjujaray"]);
@@ -330,7 +330,7 @@ class WelcomePageMob extends StatelessWidget {
               //            )),
               //     Container( width: 55,height: 55,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.medium,  size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.medium,  size: 40,), 
               //         onPressed: ()
               //           {
               //            js.context.callMethod("open", ["https://medium.com/@naveenjujaray"]);
@@ -338,7 +338,7 @@ class WelcomePageMob extends StatelessWidget {
               //            )),
               //     Container( width: 55,height: 55,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.dev, size: 40,), 
+              //         icon: FaIcon(FontAwesomeIcons.dev, size: 40,), 
               //         onPressed: ()
               //           {
               //            js.context.callMethod("open", ["https://dev.to/naveenjujaray"]);
@@ -346,7 +346,7 @@ class WelcomePageMob extends StatelessWidget {
               //            )),
               //     Container( width: 55,height: 55,
               //       child: IconButton(
-              //         icon: Icon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,),
+              //         icon: FaIcon(FontAwesomeIcons.reddit, color: Colors.deepOrangeAccent,size: 40,),
               //        onPressed: ()
               //           {
               //            js.context.callMethod("open", ["https://www.reddit.com/user/jujaraynaveen"]);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../navigationbar.dart';
 
 
@@ -29,7 +30,7 @@ class NavigationDrawer extends StatelessWidget {
 
 class DrawerItem extends StatelessWidget {
   final String title;
-  final IconData icon;
+  final dynamic icon;
   final String navigationPath;
   const DrawerItem(this.title, this.icon, this.navigationPath);
 
@@ -39,7 +40,7 @@ class DrawerItem extends StatelessWidget {
       padding: const EdgeInsets.only(left: 30, top: 60),
       child: Row(
         children: <Widget>[
-         Icon(icon),
+         icon is IconData ? Icon(icon) : FaIcon(icon),
           SizedBox(
             width: 30,
           ),
