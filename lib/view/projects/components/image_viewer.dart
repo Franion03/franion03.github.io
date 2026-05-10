@@ -5,7 +5,7 @@ class ImageViewer {
   ImageViewer(BuildContext context, String image) {
     showGeneralDialog(
       barrierColor: Colors.black,
-      transitionDuration: Duration(milliseconds: 500),
+      transitionDuration: const Duration(milliseconds: 500),
       barrierDismissible: true,
       barrierLabel: 'Barrier',
       context: context,
@@ -13,7 +13,7 @@ class ImageViewer {
         return Center(
           child: Hero(
             tag: 'IMAGEVIEW',
-            child: Container(
+            child: SizedBox(
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               child: Scaffold(
@@ -22,8 +22,8 @@ class ImageViewer {
                   color: Colors.white,
                   child: Center(
                     child: PhotoView(
-                      imageProvider: image.startsWith('http') 
-                          ? NetworkImage(image) as ImageProvider 
+                      imageProvider: image.startsWith('http')
+                          ? NetworkImage(image) as ImageProvider
                           : AssetImage(image),
                     ),
                   ),

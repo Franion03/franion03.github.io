@@ -8,7 +8,7 @@ import '../../../model/linkedin_data.dart';
 class HistoryGrid extends StatelessWidget {
   final int crossAxisCount;
   final double ratio;
-  HistoryGrid({super.key, this.crossAxisCount = 3, this.ratio = 1.3});
+  const HistoryGrid({super.key, this.crossAxisCount = 3, this.ratio = 1.3});
   // final controller = Get.put(CertificationController());
 
   @override
@@ -26,12 +26,12 @@ class HistoryGrid extends StatelessWidget {
     return FixedTimeline.tileBuilder(
       theme: TimelineThemeData(
         nodePosition: 0,
-        color: Color(0xff989898),
-        indicatorTheme: IndicatorThemeData(
+        color: const Color(0xff989898),
+        indicatorTheme: const IndicatorThemeData(
           position: 0,
           size: 20.0,
         ),
-        connectorTheme: ConnectorThemeData(
+        connectorTheme: const ConnectorThemeData(
           thickness: 2.5,
         ),
       ),
@@ -40,7 +40,7 @@ class HistoryGrid extends StatelessWidget {
         itemCount: allHistory.length,
         contentsBuilder: (_, index) {
           return Padding(
-            padding: EdgeInsets.only(left: 8.0),
+            padding: const EdgeInsets.only(left: 8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
@@ -65,15 +65,15 @@ class HistoryGrid extends StatelessWidget {
                   Colors.pinkAccent,
                   Colors.blue,
                 ]),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.pink,
-                    offset: const Offset(-2, 0),
+                    offset: Offset(-2, 0),
                     blurRadius: 10,
                   ),
                   BoxShadow(
                     color: Colors.blue,
-                    offset: const Offset(2, 0),
+                    offset: Offset(2, 0),
                     blurRadius: 10,
                   )
                 ]),

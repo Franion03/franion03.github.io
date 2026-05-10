@@ -9,7 +9,7 @@ import '../pages/skillspage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-  
+
 const String SkillsRoute = 'skills';
 const String ProjectsRoute = 'projects';
 const String EducationRoute = 'education';
@@ -21,48 +21,75 @@ const String HomeRoute = 'Home';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case HomeRoute:
-      return _getPageRoute(HomePage(), settings.name ?? HomeRoute);
+      return _getPageRoute(const HomePage(), settings.name ?? HomeRoute);
     case SkillsRoute:
-      return _getPageRoute(ScreenTypeLayout(
-        desktop: CenteredViewDesk(child: SkillsPage()),
-        tablet: CenteredViewTab(child: SkillsPage()),
-        mobile: CenteredViewMob(child: SkillsPage()),
-      ), settings.name ?? SkillsRoute);
+      return _getPageRoute(
+          ScreenTypeLayout(
+            desktop: CenteredViewDesk(child: SkillsPage()),
+            tablet: CenteredViewTab(child: SkillsPage()),
+            mobile: CenteredViewMob(child: SkillsPage()),
+          ),
+          settings.name ?? SkillsRoute);
     case ProjectsRoute:
       return _getPageRoute(
-        ScreenTypeLayout(
-      desktop: CenteredViewDesk(child: BlogPage(),),
-      tablet: CenteredViewTab(child: BlogPage(),),
-      mobile: CenteredViewMob(child: BlogPage(),),
-      ), settings.name ?? ProjectsRoute);
+          ScreenTypeLayout(
+            desktop: CenteredViewDesk(
+              child: BlogPage(),
+            ),
+            tablet: CenteredViewTab(
+              child: BlogPage(),
+            ),
+            mobile: CenteredViewMob(
+              child: BlogPage(),
+            ),
+          ),
+          settings.name ?? ProjectsRoute);
     case EducationRoute:
       return _getPageRoute(
-        ScreenTypeLayout(
-      desktop: CenteredViewDesk(child: EducationDesk(),),
-      tablet: CenteredViewTab(child: EducationTab(),),
-      mobile: CenteredViewMob(child: EducationMob(),),
-      ), settings.name ?? EducationRoute);
+          ScreenTypeLayout(
+            desktop: const CenteredViewDesk(
+              child: EducationDesk(),
+            ),
+            tablet: const CenteredViewTab(
+              child: EducationTab(),
+            ),
+            mobile: const CenteredViewMob(
+              child: EducationMob(),
+            ),
+          ),
+          settings.name ?? EducationRoute);
     case AchievementsRoute:
       return _getPageRoute(
-        ScreenTypeLayout(
-          desktop: CenteredViewDesk(child: AchievementsPage()),
-          tablet: CenteredViewTab(child: AchievementsPage()),
-          mobile: CenteredViewMob(child: AchievementsPage()),
-        ), settings.name ?? AchievementsRoute);
+          ScreenTypeLayout(
+            desktop: CenteredViewDesk(child: AchievementsPage()),
+            tablet: CenteredViewTab(child: AchievementsPage()),
+            mobile: CenteredViewMob(child: AchievementsPage()),
+          ),
+          settings.name ?? AchievementsRoute);
     case ContactRoute:
       return _getPageRoute(
-        ScreenTypeLayout(
-          desktop: CenteredViewDesk(child: ContactPageDesk()),
-          tablet: CenteredViewTab(child: ContactPage()),
-          mobile: CenteredViewMob(child: ContactPage()),
-        ), settings.name ?? ContactRoute);
+          ScreenTypeLayout(
+            desktop: const CenteredViewDesk(child: ContactPageDesk()),
+            tablet: CenteredViewTab(child: ContactPage()),
+            mobile: CenteredViewMob(child: ContactPage()),
+          ),
+          settings.name ?? ContactRoute);
     case BlogRoute:
-      return _getPageRoute(ScreenTypeLayout(
-      desktop: CenteredViewDesk(child: BlogPage(),),
-      tablet: CenteredViewTab(child: BlogPage(),),
-      mobile: CenteredViewMob(child: BlogPage(),),
-      ), settings.name ?? BlogRoute);
-    default: return _getPageRoute(HomePage(), settings.name ?? HomeRoute);
+      return _getPageRoute(
+          ScreenTypeLayout(
+            desktop: CenteredViewDesk(
+              child: BlogPage(),
+            ),
+            tablet: CenteredViewTab(
+              child: BlogPage(),
+            ),
+            mobile: CenteredViewMob(
+              child: BlogPage(),
+            ),
+          ),
+          settings.name ?? BlogRoute);
+    default:
+      return _getPageRoute(const HomePage(), settings.name ?? HomeRoute);
   }
 }
 

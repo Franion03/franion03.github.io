@@ -6,9 +6,9 @@ class Timeline {
   });
 
   Timeline.complete()
-      : this.name = '',
-        this.messages = const [],
-        this.date = DateTime.now().year.toString();
+      : name = '',
+        messages = const [],
+        date = DateTime.now().year.toString();
 
   final String name;
   final String date;
@@ -30,7 +30,7 @@ class TimelineMessage {
 }
 
 List<Timeline> companies = [
-  Timeline('Odyssey Robotics',
+  const Timeline('Odyssey Robotics',
       messages: [
         TimelineMessage('Flutter', 'Developer, use of git and rest api '),
         TimelineMessage('Flutter', 'Frontend Scrum Master'),
@@ -38,7 +38,7 @@ List<Timeline> companies = [
         TimelineMessage('Python', 'CNN  for video classification'),
       ],
       date: '2020'),
-  Timeline('Swisscom',
+  const Timeline('Swisscom',
       messages: [
         TimelineMessage('Typescript', 'Full Stack developer'),
         TimelineMessage('Golang', 'Full Stack developer'),

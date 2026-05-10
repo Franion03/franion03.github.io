@@ -2,47 +2,44 @@ import '../Rows/achievementsmain.dart';
 import 'package:flutter/material.dart';
 
 class AchievementDesk extends StatelessWidget {
-  const AchievementDesk({Key? key}) : super(key: key);
+  const AchievementDesk({super.key});
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-          child: Row(
-         children: <Widget>[
-            Expanded(child: AchieveDesk()),
-                  ],
+      child: Row(
+        children: <Widget>[
+          Expanded(child: AchieveDesk()),
+        ],
       ),
     );
   }
 }
 
 class AchievementMob extends StatelessWidget {
-  const AchievementMob({Key? key}) : super(key: key);
+  const AchievementMob({super.key});
   @override
   Widget build(BuildContext context) {
-   return SingleChildScrollView(
-          child: Column(
+    return SingleChildScrollView(
+      child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          AchieveMob()
-          
-        ],      
+        children: <Widget>[AchieveMob()],
       ),
     );
   }
 }
 
 class AchievementTab extends StatelessWidget {
-  const AchievementTab({Key? key}) : super(key: key);
+  const AchievementTab({super.key});
   @override
   Widget build(BuildContext context) {
-   return SingleChildScrollView(
-          child: Column(
+    return SingleChildScrollView(
+      child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           AchieveTab(),
-        ],      
+        ],
       ),
     );
   }

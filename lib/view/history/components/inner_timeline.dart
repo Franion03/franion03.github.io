@@ -4,6 +4,7 @@ import '../../../model/companies.dart' show TimelineMessage;
 
 class InnerTimeline extends StatelessWidget {
   const InnerTimeline({
+    super.key,
     required this.messages,
   });
 
@@ -22,7 +23,8 @@ class InnerTimeline extends StatelessWidget {
     );
   }
 
-  Widget _buildTimelineItem(BuildContext context, TimelineMessage message, bool isLast) {
+  Widget _buildTimelineItem(
+      BuildContext context, TimelineMessage message, bool isLast) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -33,7 +35,8 @@ class InnerTimeline extends StatelessWidget {
               height: 10,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                border: Border.all(color: Theme.of(context).colorScheme.primary, width: 1),
+                border: Border.all(
+                    color: Theme.of(context).colorScheme.primary, width: 1),
               ),
             ),
             if (!isLast)

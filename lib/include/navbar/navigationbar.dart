@@ -14,7 +14,7 @@ import 'logo/navbarlogo.dart';
 class NavbarItem extends StatelessWidget {
   final String title;
   final String navigationPath;
-  const NavbarItem(this.title, this.navigationPath);
+  const NavbarItem(this.title, this.navigationPath, {super.key});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -23,29 +23,29 @@ class NavbarItem extends StatelessWidget {
       },
       child: Text(
         title,
-        style: TextStyle(fontSize: 18),
+        style: const TextStyle(fontSize: 18),
       ),
     );
   }
 }
 
 class NavigationBar extends StatelessWidget {
-  const NavigationBar({Key? key}) : super(key: key);
+  const NavigationBar({super.key});
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: CenteredViewMob(child: NavbarMob()),
-      tablet: CenteredViewTab(child: NavbarMob()),
-      desktop: CenteredViewDesk(child: NavbarTbDt()),
+      mobile: const CenteredViewMob(child: NavbarMob()),
+      tablet: const CenteredViewTab(child: NavbarMob()),
+      desktop: const CenteredViewDesk(child: NavbarTbDt()),
     );
   }
 }
 
 class NavbarTbDt extends StatelessWidget {
-  const NavbarTbDt({Key? key}) : super(key: key);
+  const NavbarTbDt({super.key});
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 50,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,7 +54,7 @@ class NavbarTbDt extends StatelessWidget {
               onTap: () {
                 platform_utils.reloadPage();
               },
-              child: NavbarLogo()),
+              child: const NavbarLogo()),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Container(
@@ -89,7 +89,7 @@ class NavbarTbDt extends StatelessWidget {
                     onPressed: () {
                       AdaptiveTheme.of(context).toggleThemeMode();
                     },
-                    icon: Icon(Icons.brightness_3, size: 25),
+                    icon: const Icon(Icons.brightness_3, size: 25),
                   ),
                 ],
               ),
@@ -102,10 +102,10 @@ class NavbarTbDt extends StatelessWidget {
 }
 
 class NavbarMob extends StatelessWidget {
-  const NavbarMob({Key? key}) : super(key: key);
+  const NavbarMob({super.key});
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 40,
       child: Row(
         mainAxisSize: MainAxisSize.max,
@@ -115,7 +115,7 @@ class NavbarMob extends StatelessWidget {
               onTap: () {
                 platform_utils.reloadPage();
               },
-              child: NavbarLogo()),
+              child: const NavbarLogo()),
           Expanded(
               child: Container(
             width: 100,
@@ -125,11 +125,11 @@ class NavbarMob extends StatelessWidget {
             onPressed: () {
               AdaptiveTheme.of(context).toggleThemeMode();
             },
-            icon: Icon(Icons.brightness_3, size: 25),
+            icon: const Icon(Icons.brightness_3, size: 25),
           ),
           IconButton(
             alignment: Alignment.topRight,
-            icon: FaIcon(
+            icon: const FaIcon(
               FontAwesomeIcons.bars,
             ),
             onPressed: () {

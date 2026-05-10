@@ -4,13 +4,14 @@ import '../../../../res/constants.dart';
 import '../../../../view model/responsive.dart';
 
 class AnimatedImageContainer extends StatefulWidget {
-  const AnimatedImageContainer({Key? key, this.height = 300, this.width = 250})
-      : super(key: key);
+  const AnimatedImageContainer(
+      {super.key, this.height = 300, this.width = 250});
   final double? width;
   final double? height;
   @override
   AnimatedImageContainerState createState() => AnimatedImageContainerState();
 }
+
 class AnimatedImageContainerState extends State<AnimatedImageContainer>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
@@ -22,11 +23,13 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
       duration: const Duration(milliseconds: 1000),
     )..repeat(reverse: true); // Repeat the animation loop
   }
+
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(

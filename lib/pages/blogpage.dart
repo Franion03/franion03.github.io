@@ -4,12 +4,14 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../include/Rows/blogcardmain.dart';
 
 class BlogPage extends StatelessWidget {
+  const BlogPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
       desktop: (BuildContext context) => BlogCardDesk(),
-       tablet: (BuildContext context) => BlogCardTab(),
-       mobile: (BuildContext context) => BlogCardMob(),      
+      tablet: (BuildContext context) => BlogCardTab(),
+      mobile: (BuildContext context) => BlogCardMob(),
     );
   }
 }

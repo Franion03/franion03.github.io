@@ -7,7 +7,7 @@ import 'configure/navigation_service.dart';
 import '../res/constants.dart';
 
 void main() async {
-    WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   final savedThemeMode = await AdaptiveTheme.getThemeMode();
   setupLocator();
   runApp(MyApp(savedThemeMode: savedThemeMode));
@@ -15,9 +15,9 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   final AdaptiveThemeMode? savedThemeMode;
-  const MyApp({Key? key, required this.savedThemeMode}) : super(key: key);
+  const MyApp({super.key, required this.savedThemeMode});
   // This widget is the root of your application.
-  @override 
+  @override
   Widget build(BuildContext context) {
     return AdaptiveTheme(
       light: ThemeData(
@@ -26,29 +26,33 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
-            .apply(bodyColor: Colors.black,)
+            .apply(
+              bodyColor: Colors.black,
+            )
             .copyWith(
-          bodyLarge: const TextStyle(color: Colors.grey),
-          bodyMedium: const TextStyle(color: Colors.black),
-        ),
+              bodyLarge: const TextStyle(color: Colors.grey),
+              bodyMedium: const TextStyle(color: Colors.black),
+            ),
       ),
       dark: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         scaffoldBackgroundColor: bgColor,
         useMaterial3: true,
         textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
-            .apply(bodyColor: Colors.white,)
+            .apply(
+              bodyColor: Colors.white,
+            )
             .copyWith(
-          bodyLarge: const TextStyle(color: bodyTextColor),
-          bodyMedium: const TextStyle(color: bodyTextColor),
-        ),
+              bodyLarge: const TextStyle(color: bodyTextColor),
+              bodyMedium: const TextStyle(color: bodyTextColor),
+            ),
       ),
       initial: savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, darkTheme) => MaterialApp(
         title: 'Francisco Javier Quiles Ruiz',
         theme: theme,
         darkTheme: darkTheme,
-        home: SplashView(),
+        home: const SplashView(),
       ),
     );
   }

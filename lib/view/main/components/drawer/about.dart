@@ -18,7 +18,7 @@ class About extends StatelessWidget {
             const DrawerImage(),
             const Spacer(),
             Text(
-              'Hamad Anwar',
+              'Francisco Javier Quiles Ruiz',
               style: Theme.of(context).textTheme.titleSmall,
             ),
             const SizedBox(

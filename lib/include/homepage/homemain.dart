@@ -10,14 +10,13 @@ import '../Rows/welcomepagemain.dart';
 import 'package:flutter/material.dart';
 
 class HomeDesktop extends StatefulWidget {
-  const HomeDesktop({Key? key}) : super(key: key);
+  const HomeDesktop({super.key});
 
   @override
   _HomeDesktopState createState() => _HomeDesktopState();
 }
 
 class _HomeDesktopState extends State<HomeDesktop> {
-
   @override
   void initState() {
     // TODO: implement initState
@@ -38,19 +37,17 @@ class _HomeDesktopState extends State<HomeDesktop> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Flexible(
-                      child: ListView(
-              physics: NeverScrollableScrollPhysics(),
+            child: ListView(
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-    
               children: [
-                 
                 Row(
                   children: <Widget>[
                     Expanded(child: WelcomePage()),
                     Expanded(child: OneDesk()),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 75,
                 ),
                 Row(
@@ -59,7 +56,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     Expanded(child: SkillsLogoDesk()),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 75,
                 ),
                 Row(
@@ -68,7 +65,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     Expanded(child: ThreeDesk()),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 75,
                 ),
                 Row(
@@ -76,7 +73,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     Expanded(child: ProjectsView()),
                   ],
                 ),
-                 SizedBox(
+                const SizedBox(
                   height: 75,
                 ),
                 Row(
@@ -84,22 +81,25 @@ class _HomeDesktopState extends State<HomeDesktop> {
                     Expanded(child: Certifications()),
                   ],
                 ),
-                 SizedBox(
+                const SizedBox(
                   height: 75,
                 ),
-                 Row(
+                Row(
                   children: [
-                    Expanded(child: ContactCenterDesk()),
-                    Expanded(child: FourDesk(),),
+                    const Expanded(child: ContactCenterDesk()),
+                    Expanded(
+                      child: FourDesk(),
+                    ),
                   ],
                 ),
-                SizedBox(height: 100,),
+                const SizedBox(
+                  height: 100,
+                ),
                 Row(
                   children: [
                     Expanded(child: FooterPage()),
                   ],
                 ),
-                
               ],
             ),
           ),
@@ -110,6 +110,8 @@ class _HomeDesktopState extends State<HomeDesktop> {
 }
 
 class HomeMobile extends StatelessWidget {
+  const HomeMobile({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -118,17 +120,19 @@ class HomeMobile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-                  child: ListView(
+            child: ListView(
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               children: <Widget>[
-                WelcomePageMob(),
+                const WelcomePageMob(),
                 OneMob(),
                 History(),
                 ProjectsView(),
                 Certifications(),
-                ContactCenterMob(),
-                SizedBox(height: 50,),
+                const ContactCenterMob(),
+                const SizedBox(
+                  height: 50,
+                ),
                 FooterPage()
               ],
             ),
@@ -140,6 +144,8 @@ class HomeMobile extends StatelessWidget {
 }
 
 class HomeTab extends StatelessWidget {
+  const HomeTab({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -148,17 +154,19 @@ class HomeTab extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-                  child: ListView(   
-                    shrinkWrap: true,     
-                    physics: NeverScrollableScrollPhysics(),
+            child: ListView(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               children: <Widget>[
-                WelcomePageTab(),
+                const WelcomePageTab(),
                 OneMob(),
                 History(),
                 ProjectsView(),
                 Certifications(),
-                ContactCenterTab(),
-                SizedBox(height: 50,),
+                const ContactCenterTab(),
+                const SizedBox(
+                  height: 50,
+                ),
                 FooterMob(),
               ],
             ),

@@ -5,32 +5,32 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../view/projects/components/title_text.dart';
 
 class ContactPageDesk extends StatelessWidget {
-  const ContactPageDesk({Key? key}) : super(key: key);
+  const ContactPageDesk({super.key});
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 600,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TitleText(prefix: 'Contact ', title: 'Me'),
-          SizedBox(
+          const TitleText(prefix: 'Contact ', title: 'Me'),
+          const SizedBox(
             height: 10,
           ),
-          Text(
+          const Text(
             'DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
             style: TextStyle(color: Colors.grey, fontSize: 22),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
             children: [
-              Text(
+              const Text(
                 '☎️',
                 style: TextStyle(color: Colors.grey, fontSize: 28),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               GestureDetector(
@@ -45,7 +45,7 @@ class ContactPageDesk extends StatelessWidget {
                   );
                   launchUrl(emailLaunchUri);
                 },
-                child: Text(
+                child: const Text(
                   '+41 79 442 53 33',
                   style: TextStyle(
                       color: Colors.grey,
@@ -55,16 +55,16 @@ class ContactPageDesk extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
             children: [
-              Text(
+              const Text(
                 '✉️',
                 style: TextStyle(color: Colors.grey, fontSize: 28),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               GestureDetector(
@@ -78,7 +78,7 @@ class ContactPageDesk extends StatelessWidget {
                   );
                   launchUrl(emailLaunchUri);
                 },
-                child: Text(
+                child: const Text(
                   'fran.quiles00@gmail.com',
                   style: TextStyle(
                       color: Colors.grey,
@@ -88,7 +88,7 @@ class ContactPageDesk extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
         ],
@@ -98,33 +98,33 @@ class ContactPageDesk extends StatelessWidget {
 }
 
 class ContactPageTab extends StatelessWidget {
-  const ContactPageTab({Key? key}) : super(key: key);
+  const ContactPageTab({super.key});
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Container(
+      child: SizedBox(
         width: 600,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TitleText(prefix: 'Contact ', title: 'Me'),
-            SizedBox(
+            const TitleText(prefix: 'Contact ', title: 'Me'),
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               'DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
               style: TextStyle(color: Colors.grey, fontSize: 22),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
               children: [
-                Text(
+                const Text(
                   '☎️',
                   style: TextStyle(color: Colors.grey, fontSize: 28),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 GestureDetector(
@@ -139,7 +139,7 @@ class ContactPageTab extends StatelessWidget {
                     );
                     launchUrl(emailLaunchUri);
                   },
-                  child: Text(
+                  child: const Text(
                     '+41 79 442 53 33',
                     style: TextStyle(
                         color: Colors.grey,
@@ -149,16 +149,16 @@ class ContactPageTab extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
               children: [
-                Text(
+                const Text(
                   '✉️',
                   style: TextStyle(color: Colors.grey, fontSize: 28),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 GestureDetector(
@@ -172,7 +172,7 @@ class ContactPageTab extends StatelessWidget {
                     );
                     launchUrl(emailLaunchUri);
                   },
-                  child: Text(
+                  child: const Text(
                     'fran.quiles00@gmail.com',
                     style: TextStyle(
                         color: Colors.grey,
@@ -182,7 +182,7 @@ class ContactPageTab extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],
@@ -193,34 +193,34 @@ class ContactPageTab extends StatelessWidget {
 }
 
 class ContactPageMob extends StatelessWidget {
-  const ContactPageMob({Key? key}) : super(key: key);
+  const ContactPageMob({super.key});
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Container(
+      child: SizedBox(
         width: 600,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TitleText(prefix: 'Contact ', title: 'Me'),
-            SizedBox(
+            const TitleText(prefix: 'Contact ', title: 'Me'),
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               'DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.',
               style: TextStyle(color: Colors.grey, fontSize: 18),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   '☎️',
                   style: TextStyle(color: Colors.grey, fontSize: 22),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 GestureDetector(
@@ -235,7 +235,7 @@ class ContactPageMob extends StatelessWidget {
                     );
                     launchUrl(emailLaunchUri);
                   },
-                  child: Text(
+                  child: const Text(
                     '+41 79 442 53 33',
                     style: TextStyle(
                         color: Colors.grey,
@@ -245,19 +245,19 @@ class ContactPageMob extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                  child: Text(
+                  child: const Text(
                     '✉️',
                     style: TextStyle(color: Colors.grey, fontSize: 22),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Expanded(
@@ -273,7 +273,7 @@ class ContactPageMob extends StatelessWidget {
                         );
                         launchUrl(emailLaunchUri);
                       },
-                      child: Text(
+                      child: const Text(
                         'fran.quiles00@gmail.com',
                         style: TextStyle(
                             color: Colors.grey,
@@ -285,7 +285,7 @@ class ContactPageMob extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],

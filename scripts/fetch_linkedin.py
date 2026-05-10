@@ -26,34 +26,45 @@ def fetch_linkedin_data():
     client_id = os.environ.get('LINKEDIN_CLIENT_ID')
     client_secret = os.environ.get('LINKEDIN_CLIENT_SECRET')
     refresh_token = os.environ.get('LINKEDIN_REFRESH_TOKEN')
-
-    if not all([client_id, client_secret, refresh_token]):
-        print("::warning:: Missing LinkedIn credentials. Using fallback data.")
-        return get_fallback_data()
+    access_token_direct = os.environ.get('LINKEDIN_ACCESS_TOKEN')
 
     access_token = None
     positions = None
     certifications = None
 
-    # Step 1: Get access token
-    try:
-        token_url = "https://www.linkedin.com/oauth/v2/accessToken"
-        data = {
-            'grant_type': 'refresh_token',
-            'refresh_token': refresh_token,
-            'client_id': client_id,
-            'client_secret': client_secret,
-        }
-        res = requests.post(token_url, data=data, timeout=15)
-        res.raise_for_status()
-        access_token = res.json().get('access_token')
-        if not access_token:
-            print("::error:: No access_token in response. Check refresh token validity.")
+    # Check for direct access token first (simplest path)
+    if access_token_direct:
+        access_token = access_token_direct
+        print("✓ Using LINKEDIN_ACCESS_TOKEN directly")
+
+    # Step 1: Get access token via OAuth if no direct token
+    elif all([client_id, client_secret, refresh_token]):
+        try:
+            token_url = "https://www.linkedin.com/oauth/v2/accessToken"
+            data = {
+                'grant_type': 'refresh_token',
+                'refresh_token': refresh_token,
+                'client_id': client_id,
+                'client_secret': client_secret,
+            }
+            res = requests.post(token_url, data=data, timeout=15)
+            res.raise_for_status()
+            access_token = res.json().get('access_token')
+            if not access_token:
+                print("::error:: No access_token in response. Check refresh token validity.")
+                return get_fallback_data()
+            print("✓ Access token refreshed successfully")
+        except requests.exceptions.RequestException as e:
+            print(f"::error:: OAuth token refresh failed: {e}")
+            print(f"   Response body: {res.text[:300] if 'res' in dir() else 'N/A'}")
+            print("   Common fixes:")
+            print("   - Add LINKEDIN_ACCESS_TOKEN to .env (get from LinkedIn OAuth tool)")
+            print("   - Ensure app has r_liteprofile scope in LinkedIn Developer Portal")
+            print("   - Regenerate refresh token if expired (>365 days)")
             return get_fallback_data()
-        print("✓ Access token refreshed successfully")
-    except requests.exceptions.RequestException as e:
-        print(f"::error:: OAuth token refresh failed: {e}")
-        print(f"   Response body: {res.text[:200] if 'res' in dir() else 'N/A'}")
+    else:
+        print("::warning:: No LinkedIn credentials. Set LINKEDIN_ACCESS_TOKEN in .env")
+        print("   Get one at: https://www.linkedin.com/developers/tools/oauth")
         return get_fallback_data()
 
     headers = {
