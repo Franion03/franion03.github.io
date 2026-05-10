@@ -1,11 +1,11 @@
 {
-    "name": "Francisco Javier",
+    "name": "Fran Quiles — DevSecOps",
     "short_name": "FranQuiles",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "Francisco's CV.",
+    "background_color": "#08080D",
+    "theme_color": "#00D4AA",
+    "description": "Francisco Javier Quiles Ruiz — DevSecOps Engineer. Kubernetes, CI/CD, Cloud Architecture.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
