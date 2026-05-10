@@ -1,58 +1,112 @@
-import 'package:franciscocv/view/splash/splash_view.dart';
-
+import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:adaptive_theme/adaptive_theme.dart';
-import 'configure/navigation_service.dart';
-import '../res/constants.dart';
+import 'config/theme.dart';
+import 'config/constants.dart';
+import 'sections/nav_bar.dart';
+import 'sections/hero_section.dart';
+import 'sections/about_section.dart';
+import 'sections/projects_section.dart';
+import 'sections/skills_section.dart';
+import 'sections/experience_section.dart';
+import 'sections/certifications_section.dart';
+import 'sections/contact_section.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  final savedThemeMode = await AdaptiveTheme.getThemeMode();
-  setupLocator();
-  runApp(MyApp(savedThemeMode: savedThemeMode));
+  runApp(const PortfolioApp());
 }
 
-class MyApp extends StatelessWidget {
-  final AdaptiveThemeMode? savedThemeMode;
-  const MyApp({super.key, required this.savedThemeMode});
-  // This widget is the root of your application.
+class PortfolioApp extends StatelessWidget {
+  const PortfolioApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return AdaptiveTheme(
-      light: ThemeData(
-        brightness: Brightness.light,
-        primarySwatch: Colors.red,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-        textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
-            .apply(
-              bodyColor: Colors.black,
-            )
-            .copyWith(
-              bodyLarge: const TextStyle(color: Colors.grey),
-              bodyMedium: const TextStyle(color: Colors.black),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Francisco Javier Quiles Ruiz — DevSecOps',
+      theme: AppTheme.darkTheme,
+      home: const SplashScreen(),
+    );
+  }
+}
+
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const MainScroll()),
+      );
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: bgColor,
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('> initializing', style: AppTheme.sectionComment),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: 200,
+              child: TweenAnimationBuilder(
+                tween: Tween(begin: 0.0, end: 1.0),
+                duration: const Duration(seconds: 2),
+                builder: (_, v, __) => ClipRRect(
+                  borderRadius: BorderRadius.circular(2),
+                  child: LinearProgressIndicator(
+                    value: v,
+                    backgroundColor: surfaceColor,
+                    color: accentColor,
+                    minHeight: 3,
+                  ),
+                ),
+              ),
             ),
+          ],
+        ),
       ),
-      dark: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: bgColor,
-        useMaterial3: true,
-        textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
-            .apply(
-              bodyColor: Colors.white,
-            )
-            .copyWith(
-              bodyLarge: const TextStyle(color: bodyTextColor),
-              bodyMedium: const TextStyle(color: bodyTextColor),
+    );
+  }
+}
+
+class MainScroll extends StatelessWidget {
+  const MainScroll({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(height: 64),
+                HeroSection(),
+                AboutSection(),
+                ProjectsSection(),
+                SkillsSection(),
+                ExperienceSection(),
+                CertificationsSection(),
+                ContactSection(),
+                FooterSection(),
+              ],
             ),
-      ),
-      initial: savedThemeMode ?? AdaptiveThemeMode.light,
-      builder: (theme, darkTheme) => MaterialApp(
-        title: 'Francisco Javier Quiles Ruiz',
-        theme: theme,
-        darkTheme: darkTheme,
-        home: const SplashView(),
+          ),
+          Positioned(top: 0, left: 0, right: 0, child: NavBar()),
+        ],
       ),
     );
   }

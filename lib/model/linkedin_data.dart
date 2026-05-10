@@ -1,7 +1,7 @@
 import 'companies.dart';
 
 List<Timeline> linkedinCompanies = [
-  Timeline(
+  const Timeline(
     'Swisscom',
     messages: [
       TimelineMessage('Role', 'DevSecOps'),
@@ -9,7 +9,7 @@ List<Timeline> linkedinCompanies = [
     ],
     date: '2024',
   ),
-  Timeline(
+  const Timeline(
     'Swisscom',
     messages: [
       TimelineMessage('Role', 'Full Stack Developer'),
@@ -17,7 +17,7 @@ List<Timeline> linkedinCompanies = [
     ],
     date: '2023',
   ),
-  Timeline(
+  const Timeline(
     'Odyssey Robotics',
     messages: [
       TimelineMessage('Role', 'Software Engineer'),
