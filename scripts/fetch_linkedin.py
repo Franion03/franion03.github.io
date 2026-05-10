@@ -115,64 +115,10 @@ def get_fallback_certifications():
     Update this list when you earn new certs."""
     return [
         {
-            "name": "Flutter Essential Training: Build for Multiple Platforms",
-            "authority": {"name": "LinkedIn"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://www.linkedin.com/learning/certificates/450fc4e2f495726aea50a067caf586869ccf0cb92ebcc5a4c7b5648a95754a8f",
-        },
-        {
-            "name": "Complete Dart Learning",
-            "authority": {"name": "Udemy"},
-            "startDate": {"month": 6, "year": 2023},
-            "displaySource": "https://www.udemy.com/certificate/UC-5b01c756-0d20-4342-94e6-9d5860d1c95e/",
-        },
-        {
-            "name": "Flutter REST Movie App",
-            "authority": {"name": "Udemy"},
-            "startDate": {"month": 8, "year": 2023},
-            "displaySource": "https://www.udemy.com/certificate/UC-22efc7ca-3df5-4f26-8025-4a1bd2672f19/",
-        },
-        {
-            "name": "Modularizing and Organizing Flutter Code",
-            "authority": {"name": "LinkedIn"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://www.linkedin.com/learning/certificates/686276fa42629d4f1291da79ea46bfde0222954b60297a2e728c770768f23407",
-        },
-        {
-            "name": "Powering Your App with Live Web Data",
-            "authority": {"name": "LinkedIn"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://www.linkedin.com/learning/certificates/643f05463ae529f24bd9ea66a6ead9a20469bdb875a9ddda048c698eda3ee7c1",
-        },
-        {
-            "name": "Firebase Cloud Firestore",
-            "authority": {"name": "LinkedIn"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://www.linkedin.com/learning/certificates/8f8be25531d2bcdbab1972482150277f9a239a13ba4d314c0574638bf28d07d2",
-        },
-        {
-            "name": "Android App Security",
-            "authority": {"name": "LinkedIn"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://www.linkedin.com/learning/certificates/1c6581b35d06edfbd6275d09e84b068e813880bf7d217b703716962d7aca3518",
-        },
-        {
-            "name": "Foundations of Cybersecurity",
-            "authority": {"name": "Grow with Google on Coursera"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://coursera.org/share/67e5cb0dd7c478f1d7ec81079c3a40b8",
-        },
-        {
-            "name": "HTML, CSS, and Javascript for Web Developers",
-            "authority": {"name": "Coursera"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://coursera.org/share/67e5cb0dd7c478f1d7ec81079c3a40b8",
-        },
-        {
-            "name": "Network Defense Essentials (NDE)",
-            "authority": {"name": "EC-Council"},
-            "startDate": {"month": 7, "year": 2023},
-            "displaySource": "https://codered.eccouncil.org/certificate/43a2d2a7-40ed-4230-9e65-a9aa0935e651?logged=false",
+            "name": "AWS Certified Cloud Practitioner (CLF-C02)",
+            "authority": {"name": "Amazon Web Services (AWS)"},
+            "startDate": {"month": 1, "year": 2026},
+            "displaySource": "PASTE_YOUR_CREDLY_BADGE_URL_HERE",
         },
     ]
 
