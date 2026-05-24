@@ -71,12 +71,7 @@ class _ProjectCardState extends State<_ProjectCard> {
   }
 
   Future<void> _fetchPreview() async {
-    // Use pre-fetched image from data layer (GitHub CDN, CORS-safe)
-    if (widget.project.image.isNotEmpty) {
-      setState(() => _imageUrl = widget.project.image);
-      return;
-    }
-    // Only fall back to metadata_fetch if no pre-fetched image
+
     try {
       final data = await MetadataFetch.extract(widget.project.url);
       if (mounted && data?.image != null) {
