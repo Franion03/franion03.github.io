@@ -18,5 +18,11 @@ List<Project> projectList = [
     'List handler in c. Contribute to Franion03/Programacion_1 development by creating an account on GitHub.',
     'https://opengraph.githubassets.com/c37917540a547978f07bf086e6b7cfa767c7b050ce259856b6b7c912cc910260/Franion03/Programacion_1',
     'https://github.com/Franion03/Programacion_1',
+  ),
+  Project(
+    'Franion03 - aqua-os',
+    'Contribute to Franion03/aqua-os development by creating an account on GitHub.',
+    'https://repository-images.githubusercontent.com/1247876480/c376c148-f475-4132-b184-3b7f99288fa1',
+    'https://github.com/Franion03/aqua-os',
   )
 ];
