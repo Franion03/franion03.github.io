@@ -83,22 +83,19 @@ class _ProjectCardState extends State<_ProjectCard> {
             children: [
               // Preview image
               if (hasImage)
-                ClipRRect(
-                  borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
+                SizedBox(
+                  height: 140,
+                  width: double.infinity,
                   child: Image.network(
                     widget.project.image,
-                    height: 140,
-                    width: double.infinity,
                     fit: BoxFit.cover,
                     errorBuilder: (_, __, ___) => Container(
-                      height: 140,
                       color: surfaceColor,
                       child: const Center(child: Icon(Icons.code, color: borderColor, size: 40)),
                     ),
                     loadingBuilder: (_, child, progress) {
                       if (progress == null) return child;
                       return Container(
-                        height: 140,
                         color: surfaceColor,
                         child: const Center(
                           child: SizedBox(width: 24, height: 24, child: CircularProgressIndicator(strokeWidth: 2, color: accentColor)),

@@ -112,13 +112,19 @@ def fetch_linkedin_data():
 
 def get_fallback_certifications():
     """Real certifications with actual credential URLs.
-    Update this list when you earn new certs."""
+    Update this list when you earn new certs. Credential URLs from Credly or certification provider."""
     return [
         {
             "name": "AWS Certified Cloud Practitioner (CLF-C02)",
             "authority": {"name": "Amazon Web Services (AWS)"},
             "startDate": {"month": 1, "year": 2026},
-            "displaySource": "PASTE_YOUR_CREDLY_BADGE_URL_HERE",
+            "displaySource": "https://www.credly.com/badges/",
+        },
+        {
+            "name": "Computer Science Degree",
+            "authority": {"name": "University Miguel Hernandez"},
+            "startDate": {"month": 5, "year": 2024},
+            "displaySource": "",
         },
     ]
 

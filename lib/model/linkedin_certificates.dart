@@ -6,6 +6,13 @@ List<CertificateModel> linkedinCertificates = [
     organization: 'Amazon Web Services (AWS)',
     date: 'JAN 2026',
     skills: '',
-    credential: 'PASTE_YOUR_CREDLY_BADGE_URL_HERE',
+    credential: 'https://www.credly.com/badges/',
+  ),
+  CertificateModel(
+    name: 'Computer Science Degree',
+    organization: 'University Miguel Hernandez',
+    date: 'MAY 2024',
+    skills: '',
+    credential: '',
   )
 ];

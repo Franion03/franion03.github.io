@@ -1,0 +1,27 @@
+# ── Add this file to any project repo to auto-update your portfolio ──
+# When code is pushed to master, it notifies the portfolio repo to re-scrape
+# the project data and rebuild the website.
+#
+# How to use:
+#   1. Copy this file to .github/workflows/notify-portfolio.yml in your project repo
+#   2. Add a PAT with `repo` scope as secret: PERSONAL_TOKEN
+#      (Settings → Secrets and variables → Actions → New repository secret)
+#   3. Push to master — your portfolio will update within minutes
+
+name: Notify Portfolio
+
+on:
+  push:
+    branches: [master, main]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger portfolio update
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: Franion03/franion03.github.io
+          event-type: project-updated
+          client-payload: '{"repo": "${{ github.repository }}", "url": "${{ github.event.repository.html_url }}"}'

@@ -7,6 +7,8 @@ on:
   schedule:
     - cron: "0 0 1 * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [project-updated]
       
 jobs:
   build:
@@ -31,6 +33,12 @@ jobs:
         LINKEDIN_REFRESH_TOKEN: ${{ secrets.LINKEDIN_REFRESH_TOKEN }}
       run: python scripts/fetch_linkedin.py
       
+    - name: Log dispatch source (if triggered by another repo)
+      if: github.event_name == 'repository_dispatch'
+      run: |
+        echo "Triggered by: ${{ github.event.client_payload.repo }}"
+        echo "Project URL: ${{ github.event.client_payload.url }}"
+
     - name: Fetch Projects Data
       run: python scripts/fetch_projects.py
       

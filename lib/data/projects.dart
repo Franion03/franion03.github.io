@@ -16,18 +16,18 @@ class ProjectData {
 
 const List<ProjectData> projects = [
   ProjectData(
-    title: 'Tfg_IA',
-    description: 'Artificial Intelligence final degree project. Research and implementation of machine learning models for computer vision tasks.',
-    url: 'https://github.com/Franion03/Tfg_IA',
-    tags: ['Python', 'TensorFlow', 'Computer Vision', 'ML'],
-    image: 'https://opengraph.githubassets.com/4277e9c872168f20c7f992e9ae209adb9fe4322c9c80cb4afe0a7c0c982ce3a8/Franion03/Tfg_IA',
+    title: 'E-Commerce K8s Stack',
+    description: 'Full e-commerce platform deployed on Kubernetes. Microservices architecture with CI/CD pipelines, monitoring stack, and auto-scaling configured for production workloads.',
+    url: 'https://github.com/Franion03/e-commerce-k8s-stack',
+    tags: ['Kubernetes', 'Docker', 'Helm', 'ArgoCD', 'Terraform'],
+    image: 'https://opengraph.githubassets.com/1/Franion03/e-commerce-k8s-stack',
   ),
   ProjectData(
-    title: 'Programacion_1',
-    description: 'List handler in C. Foundational programming exercises and data structure implementations.',
-    url: 'https://github.com/Franion03/Programacion_1',
-    tags: ['C', 'Data Structures', 'Algorithms'],
-    image: 'https://opengraph.githubassets.com/c37917540a547978f07bf086e6b7cfa767c7b050ce259856b6b7c912cc910260/Franion03/Programacion_1',
+    title: 'Chess AI — Reinforcement Learning',
+    description: 'Chess engine powered by deep reinforcement learning. Trains a neural network through self-play using AlphaZero-inspired architecture with MCTS.',
+    url: 'https://github.com/Franion03/chess_ai_reinforcementlearning',
+    tags: ['Python', 'PyTorch', 'Reinforcement Learning', 'MCTS', 'AI'],
+    image: 'https://opengraph.githubassets.com/1/Franion03/chess_ai_reinforcementlearning',
   ),
   ProjectData(
     title: 'AquaOS — Water Polo Manager',
