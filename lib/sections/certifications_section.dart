@@ -24,9 +24,12 @@ class CertificationsSection extends StatelessWidget {
             subtitle: 'Continuous learning and professional development.',
           ),
           const SizedBox(height: 48),
-          LayoutBuilder(
+          Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 1100),
+              child: LayoutBuilder(
             builder: (context, constraints) {
-              final crossAxisCount = isMobile ? 1 : (constraints.maxWidth > 1100 ? 3 : 2);
+              final crossAxisCount = isMobile ? 1 : (constraints.maxWidth > 900 ? 3 : 2);
               return GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
@@ -40,6 +43,8 @@ class CertificationsSection extends StatelessWidget {
                 itemBuilder: (_, i) => _CertCard(cert: combinedList[i]),
               );
             },
+              ),
+            ),
           ),
         ],
       ),
