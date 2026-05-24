@@ -16,43 +16,24 @@ class ProjectData {
 
 const List<ProjectData> projects = [
   ProjectData(
-    title: 'Kubernetes Home Lab',
-    description:
-        'Self-hosted Kubernetes cluster on bare metal with k3s. Automated GitOps deployments via ArgoCD, '
-        'monitoring with Prometheus/Grafana, and ingress with Traefik. Runs 15+ services including media stack.',
-    url: 'https://github.com/franion03',
-    tags: ['Kubernetes', 'ArgoCD', 'Helm', 'Prometheus', 'Grafana'],
+    title: 'Tfg_IA',
+    description: 'Artificial Intelligence final degree project. Research and implementation of machine learning models for computer vision tasks.',
+    url: 'https://github.com/Franion03/Tfg_IA',
+    tags: ['Python', 'TensorFlow', 'Computer Vision', 'ML'],
+    image: 'https://opengraph.githubassets.com/4277e9c872168f20c7f992e9ae209adb9fe4322c9c80cb4afe0a7c0c982ce3a8/Franion03/Tfg_IA',
   ),
   ProjectData(
-    title: 'Cloud Migration Toolkit',
-    description:
-        'Internal tooling at Swisscom for migrating on-prem workloads to AWS. Built with Go and TypeScript. '
-        'Automated infrastructure provisioning with Terraform and configuration management.',
-    url: 'https://github.com/franion03',
-    tags: ['Go', 'TypeScript', 'Terraform', 'AWS', 'Docker'],
+    title: 'Programacion_1',
+    description: 'List handler in C. Foundational programming exercises and data structure implementations.',
+    url: 'https://github.com/Franion03/Programacion_1',
+    tags: ['C', 'Data Structures', 'Algorithms'],
+    image: 'https://opengraph.githubassets.com/c37917540a547978f07bf086e6b7cfa767c7b050ce259856b6b7c912cc910260/Franion03/Programacion_1',
   ),
   ProjectData(
-    title: 'CI/CD Pipeline Framework',
-    description:
-        'Reusable GitLab CI templates and pipeline framework for microservices. Includes security scanning '
-        '(SAST/DAST), container signing, and automated deployment strategies.',
-    url: 'https://github.com/franion03',
-    tags: ['GitLab CI', 'Docker', 'Kubernetes', 'Go', 'Shell'],
-  ),
-  ProjectData(
-    title: 'Flutter Portfolio',
-    description:
-        'This responsive portfolio website built with Flutter Web. Features terminal aesthetic, '
-        'dark theme, and automated LinkedIn data fetching via GitHub Actions.',
-    url: 'https://github.com/franion03/franion03.github.io',
-    tags: ['Flutter', 'Dart', 'GitHub Actions', 'Python'],
-  ),
-  ProjectData(
-    title: 'Infrastructure as Code Library',
-    description:
-        'Collection of Terraform modules for AWS and on-prem deployments. Includes VPC networking, '
-        'EKS clusters, RDS databases, and security groups with least-privilege defaults.',
-    url: 'https://github.com/franion03',
-    tags: ['Terraform', 'AWS', 'HCL', 'Python'],
+    title: 'AquaOS — Water Polo Manager',
+    description: 'Agentic water polo club management system. 7-level training system, CrewAI agents for match prep and season planning, responsive web dashboard.',
+    url: 'https://github.com/Franion03/aqua-os',
+    tags: ['React', 'Python', 'FastAPI', 'CrewAI', 'AWS', 'Flutter'],
+    image: 'https://opengraph.githubassets.com/1/Franion03/aqua-os',
   ),
 ];
