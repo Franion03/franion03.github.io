@@ -17,9 +17,9 @@ class ProjectData {
 const List<ProjectData> projects = [
   ProjectData(
     title: 'Franion03 - e-commerce-k8s-stack',
-    description: 'Contribute to Franion03/e-commerce-k8s-stack development by creating an account on GitHub.',
+    description: 'This repository implements a GitOps-first Kubernetes infrastructure for a multi-vendor ecommerce company with a robot-driven warehouse. All services are self-hosted on Kubernetes, managed by ArgoCD...',
     url: 'https://github.com/Franion03/e-commerce-k8s-stack',
-    tags: ['Kubernetes', 'E-Commerce'],
+    tags: ['Kubernetes', 'ArgoCD', 'E-Commerce'],
     image: 'assets/project_images/project_0.png',
   ),
   ProjectData(
