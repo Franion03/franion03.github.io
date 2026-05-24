@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:metadata_fetch/metadata_fetch.dart';
 import '../config/constants.dart';
 import '../config/theme.dart';
 import '../data/projects.dart';
@@ -29,14 +30,12 @@ class ProjectsSection extends StatelessWidget {
               child: LayoutBuilder(
                 builder: (context, constraints) {
                   final crossAxisCount = isMobile ? 1 : (constraints.maxWidth > 900 ? 3 : 2);
-                  // Adjust aspect ratio to account for image
-                  final aspectRatio = isMobile ? 0.85 : 0.78;
                   return GridView.builder(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: crossAxisCount,
-                      childAspectRatio: aspectRatio,
+                      childAspectRatio: 0.78,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 16,
                     ),
@@ -63,11 +62,25 @@ class _ProjectCard extends StatefulWidget {
 
 class _ProjectCardState extends State<_ProjectCard> {
   bool _hovered = false;
+  String? _imageUrl;
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchPreview();
+  }
+
+  Future<void> _fetchPreview() async {
+    try {
+      final data = await MetadataFetch.extract(widget.project.url);
+      if (mounted && data?.image != null) {
+        setState(() => _imageUrl = data!.image);
+      }
+    } catch (_) {}
+  }
 
   @override
   Widget build(BuildContext context) {
-    final hasImage = widget.project.image.isNotEmpty;
-
     return MouseRegion(
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
@@ -81,29 +94,14 @@ class _ProjectCardState extends State<_ProjectCard> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Preview image
-              if (hasImage)
-                SizedBox(
-                  height: 140,
-                  width: double.infinity,
-                  child: Image.network(
-                    widget.project.image,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(
-                      color: surfaceColor,
-                      child: const Center(child: Icon(Icons.code, color: borderColor, size: 40)),
-                    ),
-                    loadingBuilder: (_, child, progress) {
-                      if (progress == null) return child;
-                      return Container(
-                        color: surfaceColor,
-                        child: const Center(
-                          child: SizedBox(width: 24, height: 24, child: CircularProgressIndicator(strokeWidth: 2, color: accentColor)),
-                        ),
-                      );
-                    },
-                  ),
-                ),
+              // Preview image from URL metadata
+              SizedBox(
+                height: 140,
+                width: double.infinity,
+                child: _imageUrl != null
+                    ? Image.network(_imageUrl!, fit: BoxFit.cover, errorBuilder: (_, __, ___) => _fallbackImage())
+                    : _fallbackImage(),
+              ),
 
               // Content
               Padding(
@@ -136,4 +134,13 @@ class _ProjectCardState extends State<_ProjectCard> {
       ),
     );
   }
+
+  Widget _fallbackImage() => Container(
+    color: surfaceColor,
+    child: Center(
+      child: _imageUrl == null
+          ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(strokeWidth: 2, color: accentColor))
+          : const Icon(Icons.code, color: borderColor, size: 40),
+    ),
+  );
 }

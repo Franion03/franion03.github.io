@@ -1,9 +1,7 @@
 linkedin:
-  # The fetch_linkedin.py script uses the official LinkedIn API which gets data for the authenticated API credentials.
-  # We can store your public URL here for completeness!
   profile_url: https://linkedin.com/in/franion03
 
 projects:
-  - url: https://github.com/Franion03/Tfg_IA
-  - url: https://github.com/Franion03/Programacion_1
-  - url: https://github.com/Franion03/aqua-os 
+  - url: https://github.com/Franion03/e-commerce-k8s-stack
+  - url: https://github.com/Franion03/chess_ai_reinforcementlearning
+  - url: https://github.com/Franion03/aqua-os

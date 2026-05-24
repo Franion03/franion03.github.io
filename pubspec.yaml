@@ -42,9 +42,9 @@ dependencies:
   photo_view: ^0.14.0
   get: ^4.6.6
   timelines_plus: ^2.0.0
-  flutter_link_previewer: ^4.2.0
   flutter_chat_types: ^3.6.2
   flutter_chat_core: ^2.0.2
+  metadata_fetch: ^0.4.2
 
 dev_dependencies:
   flutter_test:

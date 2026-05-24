@@ -158,14 +158,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.6.2"
-  flutter_link_previewer:
-    dependency: "direct main"
-    description:
-      name: flutter_link_previewer
-      sha256: "346f345064e65bc8bf739bccf19d6d6ca50f8183ffc52e452afa58c06ee2cbf7"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.2.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -376,6 +368,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
+  metadata_fetch:
+    dependency: "direct main"
+    description:
+      name: metadata_fetch
+      sha256: "24a713eaddbebea3dc3036a6c1d6f7c57e187fff5f0ef07be3e3ebbb7820c3e7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.2"
   mime:
     dependency: transitive
     description:
@@ -528,14 +528,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
-  punycode:
-    dependency: transitive
-    description:
-      name: punycode
-      sha256: "39b874cc1f78b94e57db17e74b3f2ba2a96e25c0bebdcc8a571614dccda0ff0c"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
   record_use:
     dependency: transitive
     description:
@@ -645,6 +637,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.1"
+  string_validator:
+    dependency: transitive
+    description:
+      name: string_validator
+      sha256: "240f4c98027dfbe8639c8271ef18cc9de735b47067aa15a720cfed9576a512b1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.0"
   term_glyph:
     dependency: transitive
     description:

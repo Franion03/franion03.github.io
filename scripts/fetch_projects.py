@@ -55,27 +55,64 @@ def scrape_url(url):
 def format_to_dart(projects):
     items = []
     for p in projects:
-        item = f"""  Project(
-    '{p['name']}',
-    '{p['description']}',
-    '{p['image']}',
-    '{p['link']}',
+        title = p['name'].replace("'", "\\'")
+        desc = p['description'].replace("'", "\\'").replace("\n", " ")
+        img = p['image'].replace("'", "\\'")
+        link = p['link']
+        # Extract tags from description (simple keyword matching)
+        tags = _infer_tags(title + " " + desc)
+        tags_str = "[" + ", ".join(f"'{t}'" for t in tags) + "]"
+        item = f"""  ProjectData(
+    title: '{title}',
+    description: '{desc}',
+    url: '{link}',
+    tags: {tags_str},
+    image: '{img}',
   )"""
         items.append(item)
 
-    dart_content = f"""class Project {{
-  final String name;
+    dart_content = f"""class ProjectData {{
+  final String title;
   final String description;
+  final String url;
+  final List<String> tags;
   final String image;
-  final String link;
-  Project(this.name, this.description, this.image, this.link);
+
+  const ProjectData({{
+    required this.title,
+    required this.description,
+    required this.url,
+    required this.tags,
+    this.image = '',
+  }});
 }}
 
-List<Project> projectList = [
+const List<ProjectData> projects = [
 {("," + chr(10)).join(items)}
 ];
 """
     return dart_content
+
+
+def _infer_tags(text: str) -> list:
+    """Infer tech tags from project description using keyword matching."""
+    text_lower = text.lower()
+    tags = []
+    keywords = {
+        'kubernetes': 'Kubernetes', 'k8s': 'Kubernetes', 'docker': 'Docker',
+        'helm': 'Helm', 'argocd': 'ArgoCD', 'terraform': 'Terraform',
+        'aws': 'AWS', 'python': 'Python', 'react': 'React', 'flutter': 'Flutter',
+        'dart': 'Dart', 'golang': 'Go', 'go ': 'Go', 'typescript': 'TypeScript',
+        'fastapi': 'FastAPI', 'crewai': 'CrewAI', 'ai': 'AI', 'ml': 'ML',
+        'pytorch': 'PyTorch', 'tensorflow': 'TensorFlow', 'c ': 'C',
+        'reinforcement': 'Reinforcement Learning', 'chess': 'AI',
+        'e-commerce': 'E-Commerce', 'microservice': 'Microservices',
+        'ci/cd': 'CI/CD', 'gitlab': 'GitLab CI', 'github actions': 'GitHub Actions',
+    }
+    for key, tag in keywords.items():
+        if key in text_lower and tag not in tags:
+            tags.append(tag)
+    return tags[:6]  # Max 6 tags
 
 import yaml
 
@@ -110,7 +147,7 @@ if __name__ == "__main__":
         ]
 
     dart_code = format_to_dart(projects)
-    output_path = os.path.join(os.path.dirname(__file__), '../lib/model/project_model.dart')
+    output_path = os.path.join(os.path.dirname(__file__), '../lib/data/projects.dart')
     
     with open(output_path, "w") as f:
         f.write(dart_code)
