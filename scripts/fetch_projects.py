@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-def scrape_url(url):
+def scrape_url(url, index: int, image_dir: str):
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
@@ -16,7 +16,27 @@ def scrape_url(url):
 
         title = title_meta['content'] if title_meta else ''
         description = description_meta['content'] if description_meta else ''
-        image = image_meta['content'] if image_meta else 'assets/images/image.png'
+        og_image_url = image_meta['content'] if image_meta else ''
+
+        # Download the OG image to local assets directory (avoids CORS)
+        image = 'assets/project_images/project_0.png'  # fallback
+        if og_image_url:
+            try:
+                img_resp = requests.get(og_image_url, timeout=15)
+                img_resp.raise_for_status()
+                ext = 'png'
+                content_type = img_resp.headers.get('content-type', '')
+                if 'jpeg' in content_type or 'jpg' in content_type:
+                    ext = 'jpg'
+                elif 'webp' in content_type:
+                    ext = 'webp'
+                image_path = os.path.join(image_dir, f'project_{index}.{ext}')
+                with open(image_path, 'wb') as f:
+                    f.write(img_resp.content)
+                image = f'assets/project_images/project_{index}.{ext}'
+                print(f"  → downloaded image ({len(img_resp.content)} bytes)")
+            except Exception as e:
+                print(f"  → image download failed: {e}")
 
         if not title:
             title_tag = soup.find('title')
@@ -128,10 +148,15 @@ if __name__ == "__main__":
     else:
         print(f"File {urls_file} not found. Returning empty projects or default.")
     
+    # Create image directory
+    project_root = os.path.dirname(os.path.dirname(__file__))
+    image_dir = os.path.join(project_root, 'assets', 'project_images')
+    os.makedirs(image_dir, exist_ok=True)
+
     projects = []
-    for url in urls:
+    for i, url in enumerate(urls):
         print(f"Scraping {url}...")
-        data = scrape_url(url)
+        data = scrape_url(url, i, image_dir)
         if data:
             projects.append(data)
     
@@ -141,7 +166,7 @@ if __name__ == "__main__":
             {
                 'name': 'Sample Project',
                 'description': 'Description',
-                'image': 'assets/images/image.png',
+                'image': 'assets/project_images/project_0.png',
                 'link': 'https://github.com/Franion03'
             }
         ]

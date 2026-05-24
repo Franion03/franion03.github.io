@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:metadata_fetch/metadata_fetch.dart';
 import '../config/constants.dart';
 import '../config/theme.dart';
 import '../data/projects.dart';
@@ -62,23 +61,6 @@ class _ProjectCard extends StatefulWidget {
 
 class _ProjectCardState extends State<_ProjectCard> {
   bool _hovered = false;
-  String? _imageUrl;
-
-  @override
-  void initState() {
-    super.initState();
-    _fetchPreview();
-  }
-
-  Future<void> _fetchPreview() async {
-
-    try {
-      final data = await MetadataFetch.extract(widget.project.url);
-      if (mounted && data?.image != null) {
-        setState(() => _imageUrl = data!.image);
-      }
-    } catch (_) {}
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -95,13 +77,15 @@ class _ProjectCardState extends State<_ProjectCard> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Preview image from URL metadata
+              // Preview image from local assets (no CORS, bundled at build time)
               SizedBox(
                 height: 140,
                 width: double.infinity,
-                child: _imageUrl != null
-                    ? Image.network(_imageUrl!, fit: BoxFit.cover, errorBuilder: (_, __, ___) => _fallbackImage())
-                    : _fallbackImage(),
+                child: Image.asset(
+                  widget.project.image,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, __, ___) => _fallbackImage(),
+                ),
               ),
 
               // Content
@@ -138,10 +122,8 @@ class _ProjectCardState extends State<_ProjectCard> {
 
   Widget _fallbackImage() => Container(
     color: surfaceColor,
-    child: Center(
-      child: _imageUrl == null
-          ? const SizedBox(width: 24, height: 24, child: CircularProgressIndicator(strokeWidth: 2, color: accentColor))
-          : const Icon(Icons.code, color: borderColor, size: 40),
+    child: const Center(
+      child: Icon(Icons.code, color: borderColor, size: 40),
     ),
   );
 }
