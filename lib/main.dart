@@ -9,6 +9,7 @@ import 'sections/projects_section.dart';
 import 'sections/skills_section.dart';
 import 'sections/experience_section.dart';
 import 'sections/certifications_section.dart';
+import 'sections/writing_section.dart';
 import 'sections/contact_section.dart';
 
 void main() {
@@ -99,6 +100,7 @@ class MainScroll extends StatelessWidget {
                 ProjectsSection(),
                 SkillsSection(),
                 ExperienceSection(),
+                WritingSection(),
                 CertificationsSection(),
                 ContactSection(),
                 FooterSection(),

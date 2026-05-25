@@ -33,6 +33,26 @@ class ContactSection extends StatelessWidget {
                 style: GoogleFonts.jetBrainsMono(color: accentColor, fontSize: 16)),
             ),
           ),
+          const SizedBox(height: 12),
+          // Resume download
+          InkWell(
+            onTap: () => launchUrl(Uri.parse('https://franion03.github.io/resume.pdf')),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                border: Border.all(color: accentColor.withValues(alpha: 0.3)),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.download, size: 14, color: accentColor),
+                  const SizedBox(width: 8),
+                  Text('Download Resume', style: GoogleFonts.jetBrainsMono(color: accentColor, fontSize: 11)),
+                ],
+              ),
+            ),
+          ),
           const SizedBox(height: 24),
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
