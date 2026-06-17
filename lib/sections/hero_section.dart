@@ -65,6 +65,9 @@ class HeroSection extends StatelessWidget {
             alignment: WrapAlignment.center,
             children: [
               _PrimaryButton(label: 'View Projects', onTap: () {}),
+              _SecondaryButton(label: 'Download CV', onTap: () {
+                launchUrl(Uri.parse('CV.pdf'));
+              }),
               _SecondaryButton(label: 'Get in Touch', onTap: () {}),
             ],
           ),
