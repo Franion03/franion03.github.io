@@ -24,7 +24,7 @@ class PortfolioApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Francisco Javier Quiles Ruiz — DevSecOps',
+      title: 'Francisco Javier Quiles Ruiz — MLOps Engineer',
       theme: AppTheme.darkTheme,
       home: const SplashScreen(),
     );
@@ -83,31 +83,65 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 }
 
-class MainScroll extends StatelessWidget {
+class MainScroll extends StatefulWidget {
   const MainScroll({super.key});
 
   @override
+  State<MainScroll> createState() => _MainScrollState();
+}
+
+class _MainScrollState extends State<MainScroll> {
+  final _scrollController = ScrollController();
+  final _aboutKey = GlobalKey();
+  final _projectsKey = GlobalKey();
+  final _skillsKey = GlobalKey();
+  final _experienceKey = GlobalKey();
+  final _certsKey = GlobalKey();
+  final _contactKey = GlobalKey();
+
+  void _scrollTo(GlobalKey key) {
+    final ctx = key.currentContext;
+    if (ctx != null) {
+      Scrollable.ensureVisible(ctx, duration: const Duration(milliseconds: 600), curve: Curves.easeInOut);
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Stack(
         children: [
           SingleChildScrollView(
+            controller: _scrollController,
             child: Column(
               children: [
-                SizedBox(height: 64),
-                HeroSection(),
-                AboutSection(),
-                ProjectsSection(),
-                SkillsSection(),
-                ExperienceSection(),
-                WritingSection(),
-                CertificationsSection(),
-                ContactSection(),
-                FooterSection(),
+                const SizedBox(height: 64),
+                HeroSection(
+                  onViewProjects: () => _scrollTo(_projectsKey),
+                  onContact: () => _scrollTo(_contactKey),
+                ),
+                Container(key: _aboutKey, child: const AboutSection()),
+                Container(key: _projectsKey, child: const ProjectsSection()),
+                Container(key: _skillsKey, child: const SkillsSection()),
+                Container(key: _experienceKey, child: const ExperienceSection()),
+                const WritingSection(),
+                Container(key: _certsKey, child: const CertificationsSection()),
+                Container(key: _contactKey, child: const ContactSection()),
+                const FooterSection(),
               ],
             ),
           ),
-          Positioned(top: 0, left: 0, right: 0, child: NavBar()),
+          Positioned(
+            top: 0, left: 0, right: 0,
+            child: NavBar(
+              onTapAbout: () => _scrollTo(_aboutKey),
+              onTapProjects: () => _scrollTo(_projectsKey),
+              onTapSkills: () => _scrollTo(_skillsKey),
+              onTapExperience: () => _scrollTo(_experienceKey),
+              onTapCerts: () => _scrollTo(_certsKey),
+              onTapContact: () => _scrollTo(_contactKey),
+            ),
+          ),
         ],
       ),
     );

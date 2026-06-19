@@ -5,7 +5,9 @@ import '../config/constants.dart';
 import '../config/theme.dart';
 
 class HeroSection extends StatelessWidget {
-  const HeroSection({super.key});
+  final VoidCallback? onViewProjects;
+  final VoidCallback? onContact;
+  const HeroSection({super.key, this.onViewProjects, this.onContact});
 
   @override
   Widget build(BuildContext context) {
@@ -64,11 +66,11 @@ class HeroSection extends StatelessWidget {
             runSpacing: 12,
             alignment: WrapAlignment.center,
             children: [
-              _PrimaryButton(label: 'View Projects', onTap: () {}),
+              _PrimaryButton(label: 'View Projects', onTap: onViewProjects ?? () {}),
               _SecondaryButton(label: 'Download CV', onTap: () {
                 launchUrl(Uri.parse('CV.pdf'));
               }),
-              _SecondaryButton(label: 'Get in Touch', onTap: () {}),
+              _SecondaryButton(label: 'Get in Touch', onTap: onContact ?? () {}),
             ],
           ),
           const SizedBox(height: 24),
