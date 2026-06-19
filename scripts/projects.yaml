@@ -2,6 +2,8 @@ linkedin:
   profile_url: https://linkedin.com/in/franion03
 
 projects:
+  - url: https://github.com/Franion03/mlops-pipeline
+  - url: https://github.com/Franion03/waterpolo_analytics
   - url: https://github.com/Franion03/e-commerce-k8s-stack
   - url: https://github.com/Franion03/chess_ai_reinforcementlearning
   - url: https://github.com/Franion03/aqua-os

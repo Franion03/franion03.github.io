@@ -119,6 +119,9 @@ def _infer_tags(text: str) -> list:
     text_lower = text.lower()
     tags = []
     keywords = {
+        'mlops': 'MLOps', 'mlflow': 'MLflow', 'kubeflow': 'Kubeflow',
+        'model serving': 'Model Serving', 'drift': 'Monitoring',
+        'sagemaker': 'SageMaker', 'yolo': 'Computer Vision',
         'kubernetes': 'Kubernetes', 'k8s': 'Kubernetes', 'docker': 'Docker',
         'helm': 'Helm', 'argocd': 'ArgoCD', 'terraform': 'Terraform',
         'aws': 'AWS', 'python': 'Python', 'react': 'React', 'flutter': 'Flutter',
@@ -128,6 +131,7 @@ def _infer_tags(text: str) -> list:
         'reinforcement': 'Reinforcement Learning', 'chess': 'AI',
         'e-commerce': 'E-Commerce', 'microservice': 'Microservices',
         'ci/cd': 'CI/CD', 'gitlab': 'GitLab CI', 'github actions': 'GitHub Actions',
+        'prometheus': 'Prometheus', 'grafana': 'Grafana', 'pipeline': 'ML Pipeline',
     }
     for key, tag in keywords.items():
         if key in text_lower and tag not in tags:
