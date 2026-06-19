@@ -111,14 +111,38 @@ def fetch_linkedin_data():
 
 
 def get_fallback_certifications():
-    """Real certifications with actual credential URLs.
-    Update this list when you earn new certs. Credential URLs from Credly or certification provider."""
+    """Real certifications from LinkedIn profile.
+    Update this list when you earn new certs."""
     return [
         {
             "name": "AWS Certified Cloud Practitioner (CLF-C02)",
             "authority": {"name": "Amazon Web Services (AWS)"},
-            "startDate": {"month": 1, "year": 2026},
+            "startDate": {"month": 12, "year": 2025},
             "displaySource": "https://www.credly.com/badges/",
+        },
+        {
+            "name": "AWS Certified AI Practitioner (AIF-C01)",
+            "authority": {"name": "Amazon Web Services (AWS)"},
+            "startDate": {"month": 6, "year": 2026},
+            "displaySource": "https://www.credly.com/badges/",
+        },
+        {
+            "name": "Versa Secure SD-WAN Configuration and Administration (V22)",
+            "authority": {"name": "Versa Networks Academy"},
+            "startDate": {"month": 1, "year": 2024},
+            "displaySource": "",
+        },
+        {
+            "name": "Versa Security Service Edge (SSE) with Concerto",
+            "authority": {"name": "Versa Networks Academy"},
+            "startDate": {"month": 1, "year": 2024},
+            "displaySource": "",
+        },
+        {
+            "name": "Versa SASE Essentials (ACE)",
+            "authority": {"name": "Versa Networks Academy"},
+            "startDate": {"month": 1, "year": 2024},
+            "displaySource": "",
         },
         {
             "name": "Computer Science Degree",
