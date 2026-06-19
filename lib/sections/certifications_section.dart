@@ -69,7 +69,9 @@ class _CertCardState extends State<_CertCard> {
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
       child: InkWell(
-        onTap: () => launchUrl(Uri.parse(widget.cert.credential)),
+        onTap: widget.cert.credential.isNotEmpty
+            ? () => launchUrl(Uri.parse(widget.cert.credential))
+            : null,
         borderRadius: BorderRadius.circular(10),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
