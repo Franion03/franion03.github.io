@@ -35,12 +35,5 @@ const List<ProjectData> projects = [
     url: 'https://github.com/Franion03/aqua-os',
     tags: ['React', 'FastAPI', 'CrewAI', 'AI'],
     image: 'assets/project_images/project_2.jpg',
-  ),
-  ProjectData(
-    title: 'Franion03 - waterpolo_analytics',
-    description: 'Real-time water polo match analysis using YOLOv8 detection, ByteTrack tracking, cap-color team classification, and homography-based field mapping. Features goalie detection, pass/shot detection, speed metrics, formation analysis, and per-team heatmaps.',
-    url: 'https://github.com/Franion03/waterpolo_analytics',
-    tags: ['AI', 'Computer Vision', 'YOLOv8', 'Sports Analytics', 'Python'],
-    image: 'assets/project_images/project_3.png',
   )
 ];
