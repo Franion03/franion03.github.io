@@ -108,6 +108,11 @@ class FooterSection extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(width: 16),
+          InkWell(
+            onTap: () => launchUrl(Uri.parse('https://franquiles.goatcounter.com')),
+            child: Text('📊 Site Stats', style: GoogleFonts.jetBrainsMono(color: bodyTextColor, fontSize: 10, decoration: TextDecoration.underline, decorationColor: accentColor.withValues(alpha: 0.3))),
+          ),
         ],
       ),
     );
