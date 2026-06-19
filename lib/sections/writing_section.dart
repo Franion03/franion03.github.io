@@ -16,22 +16,44 @@ class WritingSection extends StatelessWidget {
           const SectionHeader(
             comment: '// writing',
             title: 'Thought Leadership',
-            subtitle: 'Articles on infrastructure, automation, and cloud-native engineering.',
+            subtitle: 'Articles on MLOps, ML pipelines, and production ML systems.',
           ),
           const SizedBox(height: 48),
           Center(
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 900),
-              child: Wrap(
-                spacing: 16,
-                runSpacing: 16,
-                alignment: WrapAlignment.center,
-                children: _articles.map((a) => _ArticleCard(article: a)).toList(),
-              ),
+              child: _articles.isEmpty
+                  ? Container(
+                      padding: const EdgeInsets.symmetric(vertical: 48, horizontal: 32),
+                      decoration: BoxDecoration(
+                        color: cardColor,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: borderColor),
+                      ),
+                      child: Column(
+                        children: [
+                          Icon(Icons.edit_note, color: accentColor.withValues(alpha: 0.4), size: 48),
+                          const SizedBox(height: 16),
+                          Text('Coming Soon',
+                            style: Theme.of(context).textTheme.titleMedium),
+                          const SizedBox(height: 8),
+                          Text(
+                            'Technical articles on MLOps pipelines, model serving at scale,\nand GitOps for ML are in the works.',
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context).textTheme.bodyMedium),
+                        ],
+                      ),
+                    )
+                  : Wrap(
+                      spacing: 16,
+                      runSpacing: 16,
+                      alignment: WrapAlignment.center,
+                      children: _articles.map((a) => _ArticleCard(article: a)).toList(),
+                    ),
             ),
           ),
           const SizedBox(height: 32),
-          // CTA to blog platform
+          if (_articles.isNotEmpty)
           InkWell(
             onTap: () => launchUrl(Uri.parse('https://dev.to/franion03')),
             borderRadius: BorderRadius.circular(4),
@@ -123,25 +145,4 @@ class _Article {
 }
 
 const _articles = [
-  _Article(
-    title: 'Building a Kubernetes Home Lab on Raspberry Pi',
-    excerpt: 'From zero to production-grade K8s cluster. Covers k3s provisioning, MetalLB, Longhorn storage, and GitOps with ArgoCD — all on ARM.',
-    url: 'https://dev.to/franion03/kubernetes-home-lab',
-    platform: 'dev.to',
-    date: '2026',
-  ),
-  _Article(
-    title: 'CI/CD Pipelines That Don\'t Break at 3 AM',
-    excerpt: 'Designing resilient deployment pipelines with canary releases, automated rollbacks, and observability-first alerting.',
-    url: 'https://dev.to/franion03/cicd-pipelines',
-    platform: 'dev.to',
-    date: '2026',
-  ),
-  _Article(
-    title: 'Infrastructure as Code: Terraform Patterns at Scale',
-    excerpt: 'Module composition, state management, and drift detection for multi-environment AWS deployments.',
-    url: 'https://dev.to/franion03/terraform-patterns',
-    platform: 'dev.to',
-    date: '2026',
-  ),
 ];
