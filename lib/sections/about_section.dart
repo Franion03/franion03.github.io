@@ -18,8 +18,8 @@ class AboutSection extends StatelessWidget {
         children: [
           const SectionHeader(
             comment: '// about',
-            title: 'Building Infrastructure\nThat Ships',
-            subtitle: 'Not just config files — production systems that scale.',
+            title: 'Building ML Systems\nThat Ship',
+            subtitle: 'Not just models — production ML platforms that scale.',
           ),
           const SizedBox(height: 48),
           isMobile
@@ -57,15 +57,15 @@ class _AboutTerminal extends StatelessWidget {
   Widget build(BuildContext context) {
     return const TerminalWidget(lines: [
       r'$ whoami',
-      r'> francisco_quiles',
+      r'> francisco_quiles — mlops engineer',
       r'',
-      r'$ cat tools.txt',
-      r'> kubernetes, docker, terraform,',
-      r'> gitlab-ci, golang, flutter,',
-      r'> python, typescript, aws',
+      r'$ cat stack.txt',
+      r'> kubernetes, mlflow, kubeflow,',
+      r'> docker, terraform, argocd,',
+      r'> python, pytorch, fastapi, aws',
       r'',
-      r'$ echo $STATUS',
-      r'> building the future',
+      r'$ echo $FOCUS',
+      r'> ml pipelines · model serving · observability',
     ]);
   }
 }
@@ -78,15 +78,15 @@ class _AboutBio extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "I'm Francisco Javier Quiles Ruiz, a DevSecOps Engineer based in Bern, Switzerland. "
-          "I specialize in building secure, scalable cloud infrastructure — from Kubernetes clusters "
-          "to automated CI/CD pipelines.\n\n"
-          "My work spans container orchestration, infrastructure as code, security automation, "
-          "and full-stack development. I believe the best infrastructure is invisible — "
-          "it just works, scales, and stays secure.\n\n"
-          "When I'm not deploying clusters or writing Terraform modules, you'll find me "
-          "contributing to open-source tools, earning cloud certifications, and mentoring "
-          "junior engineers.",
+          "I'm Francisco Javier Quiles Ruiz, an MLOps Engineer based in Bern, Switzerland. "
+          "I specialize in building production ML systems — from training pipelines and model "
+          "registries to scalable serving infrastructure.\n\n"
+          "My work bridges machine learning and platform engineering: Kubernetes-based ML platforms, "
+          "automated CI/CD for models, experiment tracking with MLflow, and real-time monitoring "
+          "for model drift and performance.\n\n"
+          "When I'm not deploying ML pipelines or optimizing model serving, you'll find me "
+          "building computer vision applications, earning cloud certifications, and contributing "
+          "to open-source ML tooling.",
           style: Theme.of(context).textTheme.bodyLarge,
         ),
       ],

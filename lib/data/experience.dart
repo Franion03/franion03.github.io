@@ -18,28 +18,31 @@ const List<ExperienceData> experience = [
   ExperienceData(
     period: '2024 — Present',
     company: 'Swisscom',
-    role: 'DevSecOps Engineer',
+    role: 'MLOps / Platform Engineer',
     description:
-        'Kubernetes cluster deployment and management. Security automation, CI/CD pipeline design, '
-        'and cloud infrastructure provisioning. Built internal tooling for developer experience.',
-    tags: ['Kubernetes', 'Terraform', 'GitLab CI', 'Go', 'AWS'],
+        'Designing and operating ML infrastructure on EKS. Building ML pipelines with automated '
+        'training, model registry, and serving. GitOps-based deployments with ArgoCD, '
+        'Crossplane for infrastructure provisioning, and full observability with Prometheus/Grafana.',
+    tags: ['Kubernetes', 'MLflow', 'ArgoCD', 'Terraform', 'AWS', 'Python'],
   ),
   ExperienceData(
     period: '2023 — 2024',
     company: 'Swisscom',
-    role: 'Full Stack Developer',
+    role: 'Full Stack / ML Engineer',
     description:
-        'Full-stack development with TypeScript and Golang. Built cloud migration tooling on AWS. '
-        'Maintained CI/CD pipelines with GitLab. Implemented microservices architecture.',
-    tags: ['TypeScript', 'Go', 'AWS', 'GitLab CI', 'Docker'],
+        'Built ML-powered services with FastAPI and deployed on Kubernetes. Implemented CI/CD '
+        'pipelines for model training and serving. Developed data pipelines and feature engineering '
+        'workflows on AWS (S3, SageMaker, Lambda).',
+    tags: ['Python', 'FastAPI', 'Docker', 'AWS SageMaker', 'GitLab CI'],
   ),
   ExperienceData(
     period: '2020 — 2023',
     company: 'Odyssey Robotics',
-    role: 'Software Engineer',
+    role: 'ML Engineer',
     description:
-        'Flutter mobile development and Scrum Master. Designed ML pipelines in Python and developed '
-        'CNN models for video classification. Led a team of 4 engineers.',
-    tags: ['Flutter', 'Python', 'TensorFlow', 'Docker', 'Agile'],
+        'Designed and trained CNN models for real-time video classification. Built ML pipelines '
+        'in Python with automated retraining. Deployed models to edge devices with TensorFlow Lite. '
+        'Led a team of 4 engineers.',
+    tags: ['PyTorch', 'TensorFlow', 'Python', 'Docker', 'ML Pipelines'],
   ),
 ];

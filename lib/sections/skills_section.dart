@@ -16,25 +16,25 @@ class SkillsSection extends StatelessWidget {
           const SectionHeader(
             comment: '// skills',
             title: 'Tech Stack',
-            subtitle: 'The tools and technologies I work with daily.',
+            subtitle: 'MLOps, ML Engineering, and Cloud Infrastructure.',
           ),
           const SizedBox(height: 48),
           isMobile
               ? const Column(children: [
-                  _SkillCategory(title: 'DevOps & Cloud', skills: devopsSkills),
+                  _SkillCategory(title: 'Infrastructure & Cloud', skills: devopsSkills),
                   SizedBox(height: 32),
-                  _SkillCategory(title: 'Development', skills: devSkills),
+                  _SkillCategory(title: 'ML Engineering', skills: devSkills),
                   SizedBox(height: 32),
-                  _SkillCategory(title: 'Security', skills: securitySkills),
+                  _SkillCategory(title: 'MLOps & Platforms', skills: securitySkills),
                 ])
               : const Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(child: _SkillCategory(title: 'DevOps & Cloud', skills: devopsSkills)),
+                    Expanded(child: _SkillCategory(title: 'Infrastructure & Cloud', skills: devopsSkills)),
                     SizedBox(width: largePadding),
-                    Expanded(child: _SkillCategory(title: 'Development', skills: devSkills)),
+                    Expanded(child: _SkillCategory(title: 'ML Engineering', skills: devSkills)),
                     SizedBox(width: largePadding),
-                    Expanded(child: _SkillCategory(title: 'Security', skills: securitySkills)),
+                    Expanded(child: _SkillCategory(title: 'MLOps & Platforms', skills: securitySkills)),
                   ],
                 ),
         ],
