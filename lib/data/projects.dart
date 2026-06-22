@@ -20,14 +20,14 @@ const List<ProjectData> projects = [
     description: 'Production MLOps pipeline: training, model registry, serving, GitOps deployment, and drift monitoring - Franion03/mlops-pipeline',
     url: 'https://github.com/Franion03/mlops-pipeline',
     tags: ['MLOps', 'Monitoring', 'AI', 'ML', 'ML Pipeline'],
-    image: 'assets/project_images/project_0.png',
+    image: 'assets/project_images/project_0.jpg',
   ),
   ProjectData(
     title: 'Franion03 - waterpolo_analytics',
     description: 'It is a repo where with machine learning I will try to analyze the position of the ball, the position of the players and the relative position of all of them in respective the field. - Franion03/wa...',
     url: 'https://github.com/Franion03/waterpolo_analytics',
     tags: [],
-    image: 'assets/project_images/project_1.png',
+    image: 'assets/project_images/project_1.jpg',
   ),
   ProjectData(
     title: 'Franion03 - e-commerce-k8s-stack',
