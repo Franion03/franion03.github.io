@@ -9,6 +9,10 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [project-updated]
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
       
 jobs:
   build:
