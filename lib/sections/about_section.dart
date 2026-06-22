@@ -18,8 +18,8 @@ class AboutSection extends StatelessWidget {
         children: [
           const SectionHeader(
             comment: '// about',
-            title: 'Building ML Systems\nThat Ship',
-            subtitle: 'Not just models — production ML platforms that scale.',
+            title: 'Securing Cloud-Native\nSystems',
+            subtitle: 'DevSecOps by trade — ML/MLOps Engineer by ambition.',
           ),
           const SizedBox(height: 48),
           isMobile
@@ -57,15 +57,15 @@ class _AboutTerminal extends StatelessWidget {
   Widget build(BuildContext context) {
     return const TerminalWidget(lines: [
       r'$ whoami',
-      r'> francisco_quiles — mlops engineer',
+      r'> francisco_quiles — devsecops engineer',
       r'',
       r'$ cat stack.txt',
-      r'> kubernetes, mlflow, kubeflow,',
-      r'> docker, terraform, argocd,',
-      r'> python, pytorch, fastapi, aws',
+      r'> kubernetes, terraform, argocd,',
+      r'> docker, gitlab ci/cd, aws,',
+      r'> python, go, crossplane',
       r'',
       r'$ echo $FOCUS',
-      r'> ml pipelines · model serving · observability',
+      r'> secure pipelines · cloud infra · transitioning to ML/MLOps',
     ]);
   }
 }
@@ -78,15 +78,15 @@ class _AboutBio extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "I'm Francisco Javier Quiles Ruiz, an MLOps Engineer based in Bern, Switzerland. "
-          "I specialize in building production ML systems — from training pipelines and model "
-          "registries to scalable serving infrastructure.\n\n"
-          "My work bridges machine learning and platform engineering: Kubernetes-based ML platforms, "
-          "automated CI/CD for models, experiment tracking with MLflow, and real-time monitoring "
-          "for model drift and performance.\n\n"
-          "When I'm not deploying ML pipelines or optimizing model serving, you'll find me "
-          "building computer vision applications, earning cloud certifications, and contributing "
-          "to open-source ML tooling.",
+          "I'm Francisco Javier Quiles Ruiz, a DevSecOps Engineer based in Bern, Switzerland. "
+          "I specialize in securing cloud-native infrastructure — CI/CD pipelines, Kubernetes "
+          "clusters, and GitOps-driven deployments at scale.\n\n"
+          "My work focuses on platform engineering: EKS clusters with Crossplane, automated "
+          "security scanning in pipelines, infrastructure as code with Terraform, and full "
+          "observability with Prometheus/Grafana.\n\n"
+          "I'm actively transitioning into ML/MLOps Engineering — building ML pipelines, "
+          "model serving infrastructure, and applying my DevSecOps foundations to production "
+          "machine learning systems.",
           style: Theme.of(context).textTheme.bodyLarge,
         ),
       ],

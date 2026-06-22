@@ -18,31 +18,29 @@ const List<ExperienceData> experience = [
   ExperienceData(
     period: '2024 — Present',
     company: 'Swisscom',
-    role: 'MLOps / Platform Engineer',
+    role: 'DevSecOps / Platform Engineer',
     description:
-        'Designing and operating ML infrastructure on EKS. Building ML pipelines with automated '
-        'training, model registry, and serving. GitOps-based deployments with ArgoCD, '
-        'Crossplane for infrastructure provisioning, and full observability with Prometheus/Grafana.',
-    tags: ['Kubernetes', 'MLflow', 'ArgoCD', 'Terraform', 'AWS', 'Python'],
+        'Securing and operating cloud-native infrastructure on EKS. GitOps-based deployments with ArgoCD, '
+        'Crossplane for infrastructure provisioning, CI/CD pipeline security (SAST/DAST), '
+        'and full observability with Prometheus/Grafana. Transitioning into ML/MLOps engineering.',
+    tags: ['Kubernetes', 'ArgoCD', 'Crossplane', 'Terraform', 'AWS', 'Security'],
   ),
   ExperienceData(
     period: '2023 — 2024',
     company: 'Swisscom',
-    role: 'Full Stack / ML Engineer',
+    role: 'Full Stack / DevOps Engineer',
     description:
-        'Built ML-powered services with FastAPI and deployed on Kubernetes. Implemented CI/CD '
-        'pipelines for model training and serving. Developed data pipelines and feature engineering '
-        'workflows on AWS (S3, SageMaker, Lambda).',
-    tags: ['Python', 'FastAPI', 'Docker', 'AWS SageMaker', 'GitLab CI'],
+        'Built cloud-native services with FastAPI and deployed on Kubernetes. Implemented secure CI/CD '
+        'pipelines with GitLab. Automated infrastructure with Terraform and AWS (EKS, S3, IAM).',
+    tags: ['Python', 'FastAPI', 'Docker', 'AWS', 'GitLab CI', 'Terraform'],
   ),
   ExperienceData(
     period: '2020 — 2023',
     company: 'Odyssey Robotics',
-    role: 'ML Engineer',
+    role: 'Software Engineer',
     description:
-        'Designed and trained CNN models for real-time video classification. Built ML pipelines '
-        'in Python with automated retraining. Deployed models to edge devices with TensorFlow Lite. '
-        'Led a team of 4 engineers.',
-    tags: ['PyTorch', 'TensorFlow', 'Python', 'Docker', 'ML Pipelines'],
+        'Designed and deployed applications for real-time video processing. Built CI/CD pipelines '
+        'and containerized deployments with Docker. Led a team of 4 engineers.',
+    tags: ['Python', 'Docker', 'CI/CD', 'Linux', 'Networking'],
   ),
 ];

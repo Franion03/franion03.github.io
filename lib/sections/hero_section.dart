@@ -55,7 +55,7 @@ class HeroSection extends StatelessWidget {
           const SizedBox(height: 20),
           // Tagline
           Text(
-            'MLOps Engineer building production ML systems —\nfrom training pipelines to model serving at scale. Bridging ML and infrastructure.',
+            'DevSecOps Engineer securing cloud-native systems —\nbuilding secure pipelines and infrastructure. Transitioning into ML/MLOps Engineering.',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyLarge,
           ),

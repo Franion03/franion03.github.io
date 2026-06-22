@@ -13,21 +13,21 @@ const List<SkillData> devopsSkills = [
   SkillData(name: 'Docker', percentage: 93),
   SkillData(name: 'Terraform / IaC', percentage: 87),
   SkillData(name: 'GitLab CI/CD', percentage: 90),
-  SkillData(name: 'AWS (SageMaker, EKS, S3)', percentage: 85),
+  SkillData(name: 'AWS (EKS, S3, IAM)', percentage: 88),
 ];
 
 const List<SkillData> devSkills = [
-  SkillData(name: 'Python (ML/Data)', percentage: 90),
-  SkillData(name: 'MLflow / Experiment Tracking', percentage: 85),
-  SkillData(name: 'PyTorch / TensorFlow', percentage: 82),
-  SkillData(name: 'FastAPI / Model Serving', percentage: 88),
+  SkillData(name: 'Python', percentage: 90),
   SkillData(name: 'Go', percentage: 85),
+  SkillData(name: 'FastAPI', percentage: 88),
+  SkillData(name: 'Crossplane / Helm', percentage: 85),
+  SkillData(name: 'Bash / Scripting', percentage: 87),
 ];
 
 const List<SkillData> securitySkills = [
-  SkillData(name: 'ML Pipelines (Kubeflow/Airflow)', percentage: 85),
-  SkillData(name: 'Model Monitoring / Drift Detection', percentage: 82),
-  SkillData(name: 'Feature Stores / Data Pipelines', percentage: 80),
-  SkillData(name: 'Prometheus / Grafana', percentage: 88),
+  SkillData(name: 'SAST / DAST / Dependency Scanning', percentage: 85),
   SkillData(name: 'ArgoCD / GitOps', percentage: 90),
+  SkillData(name: 'Prometheus / Grafana', percentage: 88),
+  SkillData(name: 'ML Pipelines (learning)', percentage: 70),
+  SkillData(name: 'MLflow / Model Serving (learning)', percentage: 65),
 ];
